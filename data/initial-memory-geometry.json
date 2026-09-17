@@ -1,0 +1,237 @@
+{
+  "description": "Development ablation of the learned initial-memory geometry. Every arm changes only how the learned initial table is composed; target entry variance is matched. Counts are additive; exact-set accuracy = exact_sets / examples.",
+  "configuration": {
+    "model": "Earlier BDM development variant; its controller also maps the router factor scores into the bank query and key, which the final architecture removes. No short convolution.",
+    "layers": 8,
+    "width": 512,
+    "heads": 1,
+    "value_width": 512,
+    "bank_count": 512,
+    "bank_size": 8,
+    "memory_rows": 4096,
+    "selected_banks_per_role": 8,
+    "router_factors": [
+      16,
+      32
+    ],
+    "state_dtype": "bfloat16",
+    "benchmark": "adaptive-recall-seed102337-v1",
+    "model_seed": 0,
+    "updates": 30000,
+    "batch": 32,
+    "optimizer": "AdamW, lr 3e-4 after 100-update warmup then constant, betas (0.9, 0.95), weight decay 0.01, clip 1.0",
+    "accelerator": "NVIDIA RTX PRO 4500 Blackwell"
+  },
+  "complete_runs": [
+    {
+      "arm": "near_square_rows",
+      "initial_memory": "M0[j,s] = U[floor((8j+s)/64)] + Z[(8j+s) mod 64]; P = Q = 64 near-square row factors",
+      "learned_vectors_per_layer": 128,
+      "total_parameters": 30793416,
+      "validation": {
+        "span_recall": {
+          "examples": 16384,
+          "exact_sets": 16229,
+          "correct_queries": 261985,
+          "queries": 262144
+        },
+        "overwrite_recall": {
+          "examples": 12288,
+          "exact_sets": 11944,
+          "correct_queries": 196241,
+          "queries": 196608
+        },
+        "pointer_chase": {
+          "examples": 32768,
+          "exact_sets": 7732,
+          "correct_queries": 136618,
+          "queries": 524288
+        },
+        "one_hop": {
+          "examples": 8192,
+          "exact_sets": 7732,
+          "correct_queries": 130598,
+          "queries": 131072
+        },
+        "all": {
+          "examples": 61440,
+          "exact_sets": 35905,
+          "correct_queries": 594844,
+          "queries": 983040
+        }
+      },
+      "test": {
+        "span_recall": {
+          "examples": 16384,
+          "exact_sets": 16229,
+          "correct_queries": 261981,
+          "queries": 262144
+        },
+        "overwrite_recall": {
+          "examples": 12288,
+          "exact_sets": 11961,
+          "correct_queries": 196256,
+          "queries": 196608
+        },
+        "pointer_chase": {
+          "examples": 32768,
+          "exact_sets": 7724,
+          "correct_queries": 136531,
+          "queries": 524288
+        },
+        "one_hop": {
+          "examples": 8192,
+          "exact_sets": 7724,
+          "correct_queries": 130591,
+          "queries": 131072
+        },
+        "all": {
+          "examples": 61440,
+          "exact_sets": 35914,
+          "correct_queries": 594768,
+          "queries": 983040
+        }
+      }
+    },
+    {
+      "arm": "bank_row_column_slot",
+      "initial_memory": "M0[j,s] = U[r] + V[c] + R[s], with (r, c) the 16 x 32 router coordinates of bank j",
+      "learned_vectors_per_layer": 56,
+      "total_parameters": 30498504,
+      "validation": {
+        "span_recall": {
+          "examples": 16384,
+          "exact_sets": 13256,
+          "correct_queries": 258268,
+          "queries": 262144
+        },
+        "overwrite_recall": {
+          "examples": 12288,
+          "exact_sets": 8834,
+          "correct_queries": 192306,
+          "queries": 196608
+        },
+        "pointer_chase": {
+          "examples": 32768,
+          "exact_sets": 0,
+          "correct_queries": 34692,
+          "queries": 524288
+        },
+        "one_hop": {
+          "examples": 8192,
+          "exact_sets": 0,
+          "correct_queries": 28684,
+          "queries": 131072
+        },
+        "all": {
+          "examples": 61440,
+          "exact_sets": 22090,
+          "correct_queries": 485266,
+          "queries": 983040
+        }
+      },
+      "test": {
+        "span_recall": {
+          "examples": 16384,
+          "exact_sets": 13251,
+          "correct_queries": 258300,
+          "queries": 262144
+        },
+        "overwrite_recall": {
+          "examples": 12288,
+          "exact_sets": 8801,
+          "correct_queries": 192213,
+          "queries": 196608
+        },
+        "pointer_chase": {
+          "examples": 32768,
+          "exact_sets": 0,
+          "correct_queries": 35090,
+          "queries": 524288
+        },
+        "one_hop": {
+          "examples": 8192,
+          "exact_sets": 0,
+          "correct_queries": 29033,
+          "queries": 131072
+        },
+        "all": {
+          "examples": 61440,
+          "exact_sets": 22052,
+          "correct_queries": 485603,
+          "queries": 983040
+        }
+      }
+    },
+    {
+      "arm": "bank_matrix",
+      "initial_memory": "M0[j,s] = U[r,s] + V[c,s], with (r, c) the 16 x 32 router coordinates of bank j",
+      "learned_vectors_per_layer": 384,
+      "total_parameters": 31841992,
+      "validation": {
+        "span_recall": {
+          "examples": 16384,
+          "exact_sets": 0,
+          "correct_queries": 8847,
+          "queries": 262144
+        },
+        "overwrite_recall": {
+          "examples": 12288,
+          "exact_sets": 0,
+          "correct_queries": 5426,
+          "queries": 196608
+        },
+        "pointer_chase": {
+          "examples": 32768,
+          "exact_sets": 0,
+          "correct_queries": 3652,
+          "queries": 524288
+        },
+        "one_hop": {
+          "examples": 8192,
+          "exact_sets": 0,
+          "correct_queries": 896,
+          "queries": 131072
+        },
+        "all": {
+          "examples": 61440,
+          "exact_sets": 0,
+          "correct_queries": 17925,
+          "queries": 983040
+        }
+      },
+      "test": {
+        "span_recall": {
+          "examples": 16384,
+          "exact_sets": 0,
+          "correct_queries": 8726,
+          "queries": 262144
+        },
+        "overwrite_recall": {
+          "examples": 12288,
+          "exact_sets": 0,
+          "correct_queries": 5455,
+          "queries": 196608
+        },
+        "pointer_chase": {
+          "examples": 32768,
+          "exact_sets": 0,
+          "correct_queries": 3716,
+          "queries": 524288
+        },
+        "one_hop": {
+          "examples": 8192,
+          "exact_sets": 0,
+          "correct_queries": 935,
+          "queries": 131072
+        },
+        "all": {
+          "examples": 61440,
+          "exact_sets": 0,
+          "correct_queries": 17897,
+          "queries": 983040
+        }
+      }
+    }
+  ]
+}

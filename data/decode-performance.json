@@ -1,0 +1,1074 @@
+[
+  {
+    "family": "attention",
+    "context": 8192,
+    "status": "ok",
+    "samples_ms": [
+      1.7448377257096581,
+      1.7454887420171872,
+      1.753783877575188
+    ],
+    "cuda_event_samples_ms": [
+      1.7447712421417236,
+      1.7454588413238525,
+      1.753753662109375
+    ],
+    "decode_ms": 1.7480367817673443,
+    "peak_allocated_bytes": 3780667904,
+    "start_context": [
+      8448,
+      8704,
+      8960
+    ],
+    "end_context": [
+      8704,
+      8960,
+      9216
+    ]
+  },
+  {
+    "family": "attention",
+    "context": 16384,
+    "status": "ok",
+    "samples_ms": [
+      2.0571992299665,
+      2.057810368569335,
+      2.0583174264174886
+    ],
+    "cuda_event_samples_ms": [
+      2.057029962539673,
+      2.0578651428222656,
+      2.0582733154296875
+    ],
+    "decode_ms": 2.057775674984441,
+    "peak_allocated_bytes": 4856506880,
+    "start_context": [
+      16640,
+      16896,
+      17152
+    ],
+    "end_context": [
+      16896,
+      17152,
+      17408
+    ]
+  },
+  {
+    "family": "attention",
+    "context": 32768,
+    "status": "ok",
+    "samples_ms": [
+      2.6351035867264727,
+      2.638249672600068,
+      2.641394195961766
+    ],
+    "cuda_event_samples_ms": [
+      2.6350455284118652,
+      2.6382055282592773,
+      2.641341209411621
+    ],
+    "decode_ms": 2.638249151762769,
+    "peak_allocated_bytes": 7008184832,
+    "start_context": [
+      33024,
+      33280,
+      33536
+    ],
+    "end_context": [
+      33280,
+      33536,
+      33792
+    ]
+  },
+  {
+    "family": "attention",
+    "context": 65536,
+    "status": "ok",
+    "samples_ms": [
+      3.7657098637282616,
+      3.764121371204965,
+      3.754871328055742
+    ],
+    "cuda_event_samples_ms": [
+      3.7653071880340576,
+      3.7631585597991943,
+      3.7543272972106934
+    ],
+    "decode_ms": 3.761567520996323,
+    "peak_allocated_bytes": 11311540736,
+    "start_context": [
+      65792,
+      66048,
+      66304
+    ],
+    "end_context": [
+      66048,
+      66304,
+      66560
+    ]
+  },
+  {
+    "family": "attention",
+    "context": 131072,
+    "status": "ok",
+    "samples_ms": [
+      5.703494913177565,
+      5.710132163585513,
+      5.703867678676033
+    ],
+    "cuda_event_samples_ms": [
+      5.70322847366333,
+      5.709936618804932,
+      5.703699588775635
+    ],
+    "decode_ms": 5.70583158514637,
+    "peak_allocated_bytes": 19918252544,
+    "start_context": [
+      131328,
+      131584,
+      131840
+    ],
+    "end_context": [
+      131584,
+      131840,
+      132096
+    ]
+  },
+  {
+    "family": "attention",
+    "context": 262144,
+    "status": "ok",
+    "samples_ms": [
+      10.398040947620757,
+      10.384938246716047,
+      10.40477406604623
+    ],
+    "cuda_event_samples_ms": [
+      10.398604393005371,
+      10.384233474731445,
+      10.404407501220703
+    ],
+    "decode_ms": 10.395917753461012,
+    "peak_allocated_bytes": 37131676160,
+    "start_context": [
+      262400,
+      262656,
+      262912
+    ],
+    "end_context": [
+      262656,
+      262912,
+      263168
+    ]
+  },
+  {
+    "family": "attention",
+    "context": 524288,
+    "status": "ok",
+    "samples_ms": [
+      19.80152732357965,
+      19.73814748089353,
+      19.714943007784314
+    ],
+    "cuda_event_samples_ms": [
+      19.80093002319336,
+      19.737154006958008,
+      19.713918685913086
+    ],
+    "decode_ms": 19.7515392707525,
+    "peak_allocated_bytes": 71558523392,
+    "start_context": [
+      524544,
+      524800,
+      525056
+    ],
+    "end_context": [
+      524800,
+      525056,
+      525312
+    ]
+  },
+  {
+    "family": "attention",
+    "context": 1048576,
+    "status": "unmeasured: prefill OOM",
+    "samples_ms": [],
+    "cuda_event_samples_ms": [],
+    "decode_ms": null,
+    "peak_allocated_bytes": null,
+    "start_context": [],
+    "end_context": []
+  },
+  {
+    "family": "gdn1",
+    "context": 8192,
+    "status": "ok",
+    "samples_ms": [
+      1.8043959134956822,
+      1.806525930078351,
+      1.8047931680484908
+    ],
+    "cuda_event_samples_ms": [
+      1.8043186664581299,
+      1.8046002388000488,
+      1.8047417402267456
+    ],
+    "decode_ms": 1.805238337207508,
+    "peak_allocated_bytes": 2187381248,
+    "start_context": [
+      8448,
+      8704,
+      8960
+    ],
+    "end_context": [
+      8704,
+      8960,
+      9216
+    ]
+  },
+  {
+    "family": "gdn1",
+    "context": 16384,
+    "status": "ok",
+    "samples_ms": [
+      1.8059627109323628,
+      1.8075905354635324,
+      1.8063372572214575
+    ],
+    "cuda_event_samples_ms": [
+      1.8059148788452148,
+      1.8075578212738037,
+      1.8063058853149414
+    ],
+    "decode_ms": 1.806630167872451,
+    "peak_allocated_bytes": 2187381248,
+    "start_context": [
+      16640,
+      16896,
+      17152
+    ],
+    "end_context": [
+      16896,
+      17152,
+      17408
+    ]
+  },
+  {
+    "family": "gdn1",
+    "context": 32768,
+    "status": "ok",
+    "samples_ms": [
+      1.800690270101768,
+      1.802588394639315,
+      1.802452172341873
+    ],
+    "cuda_event_samples_ms": [
+      1.800639271736145,
+      1.8025201559066772,
+      1.8024152517318726
+    ],
+    "decode_ms": 1.801910279027652,
+    "peak_allocated_bytes": 2187381248,
+    "start_context": [
+      33024,
+      33280,
+      33536
+    ],
+    "end_context": [
+      33280,
+      33536,
+      33792
+    ]
+  },
+  {
+    "family": "gdn1",
+    "context": 65536,
+    "status": "ok",
+    "samples_ms": [
+      1.8027757341769757,
+      1.8031061626970768,
+      1.8027993046416668
+    ],
+    "cuda_event_samples_ms": [
+      1.802712321281433,
+      1.8030468225479126,
+      1.8027435541152954
+    ],
+    "decode_ms": 1.802893733838573,
+    "peak_allocated_bytes": 2187381248,
+    "start_context": [
+      65792,
+      66048,
+      66304
+    ],
+    "end_context": [
+      66048,
+      66304,
+      66560
+    ]
+  },
+  {
+    "family": "gdn1",
+    "context": 131072,
+    "status": "ok",
+    "samples_ms": [
+      1.8068408717226703,
+      1.804296882255585,
+      1.8037913268926786
+    ],
+    "cuda_event_samples_ms": [
+      1.8065941333770752,
+      1.8041777610778809,
+      1.8037548065185547
+    ],
+    "decode_ms": 1.8049763602903113,
+    "peak_allocated_bytes": 2187381248,
+    "start_context": [
+      131328,
+      131584,
+      131840
+    ],
+    "end_context": [
+      131584,
+      131840,
+      132096
+    ]
+  },
+  {
+    "family": "gdn1",
+    "context": 262144,
+    "status": "ok",
+    "samples_ms": [
+      1.8029966249741847,
+      1.8035683751804754,
+      1.8031269664788852
+    ],
+    "cuda_event_samples_ms": [
+      1.8028464317321777,
+      1.8032588958740234,
+      1.803035020828247
+    ],
+    "decode_ms": 1.803230655544515,
+    "peak_allocated_bytes": 2187381248,
+    "start_context": [
+      262400,
+      262656,
+      262912
+    ],
+    "end_context": [
+      262656,
+      262912,
+      263168
+    ]
+  },
+  {
+    "family": "gdn1",
+    "context": 524288,
+    "status": "ok",
+    "samples_ms": [
+      1.8048710790026234,
+      1.805237348889932,
+      1.805224457712029
+    ],
+    "cuda_event_samples_ms": [
+      1.8047640323638916,
+      1.8050986528396606,
+      1.8051209449768066
+    ],
+    "decode_ms": 1.8051109618681949,
+    "peak_allocated_bytes": 2187381248,
+    "start_context": [
+      524544,
+      524800,
+      525056
+    ],
+    "end_context": [
+      524800,
+      525056,
+      525312
+    ]
+  },
+  {
+    "family": "gdn1",
+    "context": 1048576,
+    "status": "ok",
+    "samples_ms": [
+      1.804029587219702,
+      1.803496897991863,
+      1.803485651180381
+    ],
+    "cuda_event_samples_ms": [
+      1.8039770126342773,
+      1.8033775091171265,
+      1.8034188747406006
+    ],
+    "decode_ms": 1.8036707121306488,
+    "peak_allocated_bytes": 2187381248,
+    "start_context": [
+      1048832,
+      1049088,
+      1049344
+    ],
+    "end_context": [
+      1049088,
+      1049344,
+      1049600
+    ]
+  },
+  {
+    "family": "gdn2_nvidia",
+    "context": 8192,
+    "status": "ok",
+    "samples_ms": [
+      2.180433495595935,
+      2.181121402827557,
+      2.180159624913358
+    ],
+    "cuda_event_samples_ms": [
+      2.1800663471221924,
+      2.180887222290039,
+      2.179625988006592
+    ],
+    "decode_ms": 2.18057150777895,
+    "peak_allocated_bytes": 2284988928,
+    "start_context": [
+      8448,
+      8704,
+      8960
+    ],
+    "end_context": [
+      8704,
+      8960,
+      9216
+    ]
+  },
+  {
+    "family": "gdn2_nvidia",
+    "context": 16384,
+    "status": "ok",
+    "samples_ms": [
+      2.1830039459018735,
+      2.1826364172738977,
+      2.1829817505931715
+    ],
+    "cuda_event_samples_ms": [
+      2.1829566955566406,
+      2.1825952529907227,
+      2.182650566101074
+    ],
+    "decode_ms": 2.1828740379229807,
+    "peak_allocated_bytes": 2284988928,
+    "start_context": [
+      16640,
+      16896,
+      17152
+    ],
+    "end_context": [
+      16896,
+      17152,
+      17408
+    ]
+  },
+  {
+    "family": "gdn2_nvidia",
+    "context": 32768,
+    "status": "ok",
+    "samples_ms": [
+      2.179806293497677,
+      2.180089482862968,
+      2.1809616482642014
+    ],
+    "cuda_event_samples_ms": [
+      2.179736375808716,
+      2.1800315380096436,
+      2.180375099182129
+    ],
+    "decode_ms": 2.180285808208282,
+    "peak_allocated_bytes": 2284988928,
+    "start_context": [
+      33024,
+      33280,
+      33536
+    ],
+    "end_context": [
+      33280,
+      33536,
+      33792
+    ]
+  },
+  {
+    "family": "gdn2_nvidia",
+    "context": 65536,
+    "status": "ok",
+    "samples_ms": [
+      2.1837923322891584,
+      2.184345335990656,
+      2.184035574828158
+    ],
+    "cuda_event_samples_ms": [
+      2.1837379932403564,
+      2.1837949752807617,
+      2.183976411819458
+    ],
+    "decode_ms": 2.1840577477026577,
+    "peak_allocated_bytes": 2284988928,
+    "start_context": [
+      65792,
+      66048,
+      66304
+    ],
+    "end_context": [
+      66048,
+      66304,
+      66560
+    ]
+  },
+  {
+    "family": "gdn2_nvidia",
+    "context": 131072,
+    "status": "ok",
+    "samples_ms": [
+      2.1783102456538472,
+      2.1795477859996026,
+      2.1792778115923284
+    ],
+    "cuda_event_samples_ms": [
+      2.1782517433166504,
+      2.1789391040802,
+      2.1792118549346924
+    ],
+    "decode_ms": 2.179045281081926,
+    "peak_allocated_bytes": 2284988928,
+    "start_context": [
+      131328,
+      131584,
+      131840
+    ],
+    "end_context": [
+      131584,
+      131840,
+      132096
+    ]
+  },
+  {
+    "family": "gdn2_nvidia",
+    "context": 262144,
+    "status": "ok",
+    "samples_ms": [
+      2.1883867029828252,
+      2.190514042013092,
+      2.1887457423872547
+    ],
+    "cuda_event_samples_ms": [
+      2.1883633136749268,
+      2.188234806060791,
+      2.1884024143218994
+    ],
+    "decode_ms": 2.189215495794391,
+    "peak_allocated_bytes": 2284988928,
+    "start_context": [
+      262400,
+      262656,
+      262912
+    ],
+    "end_context": [
+      262656,
+      262912,
+      263168
+    ]
+  },
+  {
+    "family": "gdn2_nvidia",
+    "context": 524288,
+    "status": "ok",
+    "samples_ms": [
+      2.1810914022353245,
+      2.1823711485922104,
+      2.1808451165270526
+    ],
+    "cuda_event_samples_ms": [
+      2.180826187133789,
+      2.1808462142944336,
+      2.1807048320770264
+    ],
+    "decode_ms": 2.181435889118196,
+    "peak_allocated_bytes": 2284988928,
+    "start_context": [
+      524544,
+      524800,
+      525056
+    ],
+    "end_context": [
+      524800,
+      525056,
+      525312
+    ]
+  },
+  {
+    "family": "gdn2_nvidia",
+    "context": 1048576,
+    "status": "ok",
+    "samples_ms": [
+      2.1789630736748222,
+      2.1797391873406013,
+      2.1792286406707717
+    ],
+    "cuda_event_samples_ms": [
+      2.1789326667785645,
+      2.179638147354126,
+      2.1791529655456543
+    ],
+    "decode_ms": 2.179310300562065,
+    "peak_allocated_bytes": 2284988928,
+    "start_context": [
+      1048832,
+      1049088,
+      1049344
+    ],
+    "end_context": [
+      1049088,
+      1049344,
+      1049600
+    ]
+  },
+  {
+    "family": "sdm_native",
+    "context": 8192,
+    "status": "ok",
+    "samples_ms": [
+      4.528625398961594,
+      4.532514558377443,
+      4.533645054834778
+    ],
+    "cuda_event_samples_ms": [
+      4.528200149536133,
+      4.531116962432861,
+      4.533478260040283
+    ],
+    "decode_ms": 4.531595004057938,
+    "peak_allocated_bytes": 3211078144,
+    "start_context": [
+      8448,
+      8704,
+      8960
+    ],
+    "end_context": [
+      8704,
+      8960,
+      9216
+    ]
+  },
+  {
+    "family": "sdm_native",
+    "context": 16384,
+    "status": "ok",
+    "samples_ms": [
+      4.769776758621447,
+      4.771745723701315,
+      4.766481933984323
+    ],
+    "cuda_event_samples_ms": [
+      4.769618511199951,
+      4.771688938140869,
+      4.766432762145996
+    ],
+    "decode_ms": 4.769334805435695,
+    "peak_allocated_bytes": 4318390784,
+    "start_context": [
+      16640,
+      16896,
+      17152
+    ],
+    "end_context": [
+      16896,
+      17152,
+      17408
+    ]
+  },
+  {
+    "family": "sdm_native",
+    "context": 32768,
+    "status": "ok",
+    "samples_ms": [
+      4.608239813023829,
+      4.608202758390689,
+      4.607273176588933
+    ],
+    "cuda_event_samples_ms": [
+      4.607010841369629,
+      4.607696533203125,
+      4.607173442840576
+    ],
+    "decode_ms": 4.607905249334483,
+    "peak_allocated_bytes": 6533016064,
+    "start_context": [
+      33024,
+      33280,
+      33536
+    ],
+    "end_context": [
+      33280,
+      33536,
+      33792
+    ]
+  },
+  {
+    "family": "sdm_native",
+    "context": 65536,
+    "status": "ok",
+    "samples_ms": [
+      4.603167793902685,
+      4.601672644639621,
+      4.599549292834126
+    ],
+    "cuda_event_samples_ms": [
+      4.601926326751709,
+      4.599808216094971,
+      4.599328994750977
+    ],
+    "decode_ms": 4.601463243792144,
+    "peak_allocated_bytes": 10895124992,
+    "start_context": [
+      65792,
+      66048,
+      66304
+    ],
+    "end_context": [
+      66048,
+      66304,
+      66560
+    ]
+  },
+  {
+    "family": "sdm_native",
+    "context": 131072,
+    "status": "ok",
+    "samples_ms": [
+      4.654229824154754,
+      4.655121483665425,
+      4.655279315556982
+    ],
+    "cuda_event_samples_ms": [
+      4.653998851776123,
+      4.6550211906433105,
+      4.654992580413818
+    ],
+    "decode_ms": 4.654876874459053,
+    "peak_allocated_bytes": 19619342848,
+    "start_context": [
+      131328,
+      131584,
+      131840
+    ],
+    "end_context": [
+      131584,
+      131840,
+      132096
+    ]
+  },
+  {
+    "family": "sdm_native",
+    "context": 262144,
+    "status": "ok",
+    "samples_ms": [
+      4.745031825223123,
+      4.744797515741084,
+      4.744260948427836
+    ],
+    "cuda_event_samples_ms": [
+      4.744778156280518,
+      4.744669437408447,
+      4.744110584259033
+    ],
+    "decode_ms": 4.744696763130681,
+    "peak_allocated_bytes": 36933495296,
+    "start_context": [
+      262400,
+      262656,
+      262912
+    ],
+    "end_context": [
+      262656,
+      262912,
+      263168
+    ]
+  },
+  {
+    "family": "sdm_native",
+    "context": 524288,
+    "status": "ok",
+    "samples_ms": [
+      5.001239058401552,
+      4.998471960789175,
+      4.997653753889608
+    ],
+    "cuda_event_samples_ms": [
+      4.995547294616699,
+      4.998524188995361,
+      4.996926307678223
+    ],
+    "decode_ms": 4.999121591026778,
+    "peak_allocated_bytes": 71561800192,
+    "start_context": [
+      524544,
+      524800,
+      525056
+    ],
+    "end_context": [
+      524800,
+      525056,
+      525312
+    ]
+  },
+  {
+    "family": "sdm_native",
+    "context": 1048576,
+    "status": "unmeasured: prefill OOM",
+    "samples_ms": [],
+    "cuda_event_samples_ms": [],
+    "decode_ms": null,
+    "peak_allocated_bytes": null,
+    "start_context": [],
+    "end_context": []
+  },
+  {
+    "canonical_commit": "ed51fd03ef83ff8ce50555a66481d878c2fc4a4f",
+    "family": "bsdm",
+    "context": 8192,
+    "status": "ok",
+    "initial_factor_multiplier": 0.7071067811865476,
+    "source_commit": "ed51fd03ef83ff8ce50555a66481d878c2fc4a4f",
+    "samples_ms": [
+      2.5220455281669274,
+      2.5232985499314964,
+      2.522714508813806
+    ],
+    "cuda_event_samples_ms": [
+      2.5220251083374023,
+      2.5232784748077393,
+      2.522688150405884
+    ],
+    "decode_ms": 2.52268619563741,
+    "peak_allocated_bytes": 2868709888,
+    "start_context": [
+      8448,
+      8704,
+      8960
+    ],
+    "end_context": [
+      8704,
+      8960,
+      9216
+    ]
+  },
+  {
+    "canonical_commit": "ed51fd03ef83ff8ce50555a66481d878c2fc4a4f",
+    "family": "bsdm",
+    "context": 16384,
+    "status": "ok",
+    "initial_factor_multiplier": 0.7071067811865476,
+    "source_commit": "ed51fd03ef83ff8ce50555a66481d878c2fc4a4f",
+    "samples_ms": [
+      2.5341864093206823,
+      2.532002530642785,
+      2.532003039959818
+    ],
+    "cuda_event_samples_ms": [
+      2.5341737270355225,
+      2.5319809913635254,
+      2.531980276107788
+    ],
+    "decode_ms": 2.5327306599744284,
+    "peak_allocated_bytes": 3416066560,
+    "start_context": [
+      16640,
+      16896,
+      17152
+    ],
+    "end_context": [
+      16896,
+      17152,
+      17408
+    ]
+  },
+  {
+    "canonical_commit": "ed51fd03ef83ff8ce50555a66481d878c2fc4a4f",
+    "family": "bsdm",
+    "context": 32768,
+    "status": "ok",
+    "initial_factor_multiplier": 0.7071067811865476,
+    "source_commit": "ed51fd03ef83ff8ce50555a66481d878c2fc4a4f",
+    "samples_ms": [
+      2.53247597720474,
+      2.532833255827427,
+      2.532345592044294
+    ],
+    "cuda_event_samples_ms": [
+      2.532457113265991,
+      2.532808542251587,
+      2.532241106033325
+    ],
+    "decode_ms": 2.5325516083588204,
+    "peak_allocated_bytes": 4504488448,
+    "start_context": [
+      33024,
+      33280,
+      33536
+    ],
+    "end_context": [
+      33280,
+      33536,
+      33792
+    ]
+  },
+  {
+    "canonical_commit": "ed51fd03ef83ff8ce50555a66481d878c2fc4a4f",
+    "family": "bsdm",
+    "context": 65536,
+    "status": "ok",
+    "initial_factor_multiplier": 0.7071067811865476,
+    "source_commit": "ed51fd03ef83ff8ce50555a66481d878c2fc4a4f",
+    "samples_ms": [
+      2.5524779921397567,
+      2.5518986076349393,
+      2.553049343987368
+    ],
+    "cuda_event_samples_ms": [
+      2.552457571029663,
+      2.551873207092285,
+      2.5530238151550293
+    ],
+    "decode_ms": 2.5524753145873547,
+    "peak_allocated_bytes": 6672943616,
+    "start_context": [
+      65792,
+      66048,
+      66304
+    ],
+    "end_context": [
+      66048,
+      66304,
+      66560
+    ]
+  },
+  {
+    "canonical_commit": "ed51fd03ef83ff8ce50555a66481d878c2fc4a4f",
+    "family": "bsdm",
+    "context": 131072,
+    "status": "ok",
+    "initial_factor_multiplier": 0.7071067811865476,
+    "source_commit": "ed51fd03ef83ff8ce50555a66481d878c2fc4a4f",
+    "samples_ms": [
+      2.565128423157148,
+      2.5653658667579293,
+      2.5654504279373214
+    ],
+    "cuda_event_samples_ms": [
+      2.5650997161865234,
+      2.5653398036956787,
+      2.5654218196868896
+    ],
+    "decode_ms": 2.5653149059507996,
+    "peak_allocated_bytes": 10997271040,
+    "start_context": [
+      131328,
+      131584,
+      131840
+    ],
+    "end_context": [
+      131584,
+      131840,
+      132096
+    ]
+  },
+  {
+    "canonical_commit": "ed51fd03ef83ff8ce50555a66481d878c2fc4a4f",
+    "family": "bsdm",
+    "context": 262144,
+    "status": "ok",
+    "initial_factor_multiplier": 0.7071067811865476,
+    "source_commit": "ed51fd03ef83ff8ce50555a66481d878c2fc4a4f",
+    "samples_ms": [
+      2.5764215242816135,
+      2.5770050269784406,
+      2.5770629290491343
+    ],
+    "cuda_event_samples_ms": [
+      2.5763914585113525,
+      2.576899528503418,
+      2.5770256519317627
+    ],
+    "decode_ms": 2.5768298267697296,
+    "peak_allocated_bytes": 19629173248,
+    "start_context": [
+      262400,
+      262656,
+      262912
+    ],
+    "end_context": [
+      262656,
+      262912,
+      263168
+    ]
+  },
+  {
+    "canonical_commit": "ed51fd03ef83ff8ce50555a66481d878c2fc4a4f",
+    "family": "bsdm",
+    "context": 524288,
+    "status": "ok",
+    "initial_factor_multiplier": 0.7071067811865476,
+    "source_commit": "ed51fd03ef83ff8ce50555a66481d878c2fc4a4f",
+    "samples_ms": [
+      2.603696600999683,
+      2.603124754386954,
+      2.6027525309473276
+    ],
+    "cuda_event_samples_ms": [
+      2.6036570072174072,
+      2.6030807495117188,
+      2.602710723876953
+    ],
+    "decode_ms": 2.6031912954446548,
+    "peak_allocated_bytes": 36867762688,
+    "start_context": [
+      524544,
+      524800,
+      525056
+    ],
+    "end_context": [
+      524800,
+      525056,
+      525312
+    ]
+  },
+  {
+    "canonical_commit": "ed51fd03ef83ff8ce50555a66481d878c2fc4a4f",
+    "family": "bsdm",
+    "context": 1048576,
+    "status": "ok",
+    "initial_factor_multiplier": 0.7071067811865476,
+    "source_commit": "ed51fd03ef83ff8ce50555a66481d878c2fc4a4f",
+    "samples_ms": [
+      2.696704614209011,
+      2.6963697164319456,
+      2.696242358069867
+    ],
+    "cuda_event_samples_ms": [
+      2.696664571762085,
+      2.6963329315185547,
+      2.69620418548584
+    ],
+    "decode_ms": 2.696438896236941,
+    "peak_allocated_bytes": 71311411712,
+    "start_context": [
+      1048832,
+      1049088,
+      1049344
+    ],
+    "end_context": [
+      1049088,
+      1049344,
+      1049600
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "block-sparse-delta-memory"
+version = "0.1.0.dev0"
+description = "Product-routed dense GDN2 memory banks"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["torch>=2.8"]
+
+[project.optional-dependencies]
+cuda = ["triton>=3.4"]
+fla = ["flash-linear-attention==0.5.2"]
+test = ["pytest>=8", "ruff"]
+
+[tool.setuptools]
+license-files = ["licenses/SDM-LICENSE", "THIRD_PARTY_NOTICES.md"]
+
+[tool.setuptools.packages.find]
+include = ["bdm*", "bsdm*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120

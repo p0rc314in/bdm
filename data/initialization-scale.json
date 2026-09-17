@@ -1,0 +1,1218 @@
+[
+  {
+    "initial_factor_multiplier": 0.7071067811865476,
+    "seed": 0,
+    "wiki": {
+      "bits_per_byte": 1.3729508740818497,
+      "correct_targets": 89786,
+      "next_token_accuracy": 0.31678815634416035,
+      "nll": 4.328473783273401,
+      "perplexity": 75.82846753369219,
+      "scored_bytes": 1289122,
+      "scored_targets": 283426,
+      "seconds": 10.443616503849626,
+      "split": "test",
+      "total_nll": 1226802.0104980469,
+      "windows": 554
+    },
+    "recall": {
+      "aggregate": {
+        "correct_queries": 595109,
+        "exact_set_accuracy": 0.5890950520833333,
+        "exact_sets": 36194,
+        "examples": 61440,
+        "loss_sum": 1907000.9752446115,
+        "queries": 983040,
+        "query_accuracy": 0.6053761800130208,
+        "query_loss": 1.939901708215954
+      },
+      "by_condition": [
+        {
+          "condition_id": "pointer_h1_n32",
+          "correct_queries": 32765,
+          "exact_sets": 2045,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 205.63048022985458
+        },
+        {
+          "condition_id": "pointer_h2_n32",
+          "correct_queries": 1020,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 138596.04638671875
+        },
+        {
+          "condition_id": "pointer_h4_n32",
+          "correct_queries": 1050,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 138287.6284790039
+        },
+        {
+          "condition_id": "pointer_h8_n32",
+          "correct_queries": 1041,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 138313.17852783203
+        },
+        {
+          "condition_id": "pointer_h1_n64",
+          "correct_queries": 32763,
+          "exact_sets": 2043,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 216.06455147266388
+        },
+        {
+          "condition_id": "pointer_h2_n64",
+          "correct_queries": 515,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 155060.10205078125
+        },
+        {
+          "condition_id": "pointer_h4_n64",
+          "correct_queries": 502,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 155058.6964111328
+        },
+        {
+          "condition_id": "pointer_h8_n64",
+          "correct_queries": 560,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 155067.6639404297
+        },
+        {
+          "condition_id": "pointer_h1_n128",
+          "correct_queries": 32751,
+          "exact_sets": 2031,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 300.9549432396889
+        },
+        {
+          "condition_id": "pointer_h2_n128",
+          "correct_queries": 267,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 167985.9305419922
+        },
+        {
+          "condition_id": "pointer_h4_n128",
+          "correct_queries": 258,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 168032.00549316406
+        },
+        {
+          "condition_id": "pointer_h8_n128",
+          "correct_queries": 283,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 167862.9991455078
+        },
+        {
+          "condition_id": "pointer_h1_n192",
+          "correct_queries": 32749,
+          "exact_sets": 2029,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 350.78352504968643
+        },
+        {
+          "condition_id": "pointer_h2_n192",
+          "correct_queries": 151,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172513.55169677734
+        },
+        {
+          "condition_id": "pointer_h4_n192",
+          "correct_queries": 165,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172470.40594482422
+        },
+        {
+          "condition_id": "pointer_h8_n192",
+          "correct_queries": 182,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172487.0326538086
+        },
+        {
+          "condition_id": "span_s1_n16",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 94.61141008138657
+        },
+        {
+          "condition_id": "span_s4_n16",
+          "correct_queries": 32767,
+          "exact_sets": 2047,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 106.6609833240509
+        },
+        {
+          "condition_id": "span_s8_n16",
+          "correct_queries": 32755,
+          "exact_sets": 2035,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 171.95837953686714
+        },
+        {
+          "condition_id": "span_s16_n16",
+          "correct_queries": 32653,
+          "exact_sets": 1941,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 549.5435929596424
+        },
+        {
+          "condition_id": "span_s1_n32",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 97.52146574854851
+        },
+        {
+          "condition_id": "span_s4_n32",
+          "correct_queries": 32764,
+          "exact_sets": 2044,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 122.6211528480053
+        },
+        {
+          "condition_id": "span_s8_n32",
+          "correct_queries": 32700,
+          "exact_sets": 1981,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 379.3470216393471
+        },
+        {
+          "condition_id": "span_s16_n32",
+          "correct_queries": 32393,
+          "exact_sets": 1703,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 1692.5007368326187
+        },
+        {
+          "condition_id": "overwrite_v1_n16",
+          "correct_queries": 32766,
+          "exact_sets": 2046,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 106.33524140715599
+        },
+        {
+          "condition_id": "overwrite_v2_n16",
+          "correct_queries": 32757,
+          "exact_sets": 2037,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 145.40542539954185
+        },
+        {
+          "condition_id": "overwrite_v4_n16",
+          "correct_queries": 32755,
+          "exact_sets": 2035,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 164.62682384252548
+        },
+        {
+          "condition_id": "overwrite_v1_n32",
+          "correct_queries": 32752,
+          "exact_sets": 2032,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 162.61818581819534
+        },
+        {
+          "condition_id": "overwrite_v2_n32",
+          "correct_queries": 32745,
+          "exact_sets": 2025,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 191.0132166147232
+        },
+        {
+          "condition_id": "overwrite_v4_n32",
+          "correct_queries": 32744,
+          "exact_sets": 2024,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 207.53683659434319
+        }
+      ],
+      "by_family": {
+        "overwrite_recall": {
+          "correct_queries": 196519,
+          "exact_set_accuracy": 0.9927571614583334,
+          "exact_sets": 12199,
+          "examples": 12288,
+          "loss_sum": 977.5357296764851,
+          "queries": 196608,
+          "query_accuracy": 0.9995473225911459,
+          "query_loss": 0.004972003833396836
+        },
+        "pointer_chase": {
+          "correct_queries": 137022,
+          "exact_set_accuracy": 0.2486572265625,
+          "exact_sets": 8148,
+          "examples": 32768,
+          "loss_sum": 1902808.6747719646,
+          "queries": 524288,
+          "query_accuracy": 0.2613487243652344,
+          "query_loss": 3.6293195243300715
+        },
+        "span_recall": {
+          "correct_queries": 261568,
+          "exact_set_accuracy": 0.96722412109375,
+          "exact_sets": 15847,
+          "examples": 16384,
+          "loss_sum": 3214.7647429704666,
+          "queries": 262144,
+          "query_accuracy": 0.997802734375,
+          "query_loss": 0.012263354274637095
+        }
+      },
+      "seconds": 98.66093710437417
+    }
+  },
+  {
+    "initial_factor_multiplier": 1,
+    "seed": 0,
+    "wiki": {
+      "bits_per_byte": 1.3749233780525918,
+      "correct_targets": 89358,
+      "next_token_accuracy": 0.31527806199854636,
+      "nll": 4.334692455686184,
+      "perplexity": 76.30148919183,
+      "scored_bytes": 1289122,
+      "scored_targets": 283426,
+      "seconds": 12.83183651699801,
+      "split": "test",
+      "total_nll": 1228564.5439453125,
+      "windows": 554
+    },
+    "recall": {
+      "aggregate": {
+        "correct_queries": 595515,
+        "exact_set_accuracy": 0.5946940104166667,
+        "exact_sets": 36538,
+        "examples": 61440,
+        "loss_sum": 1902485.2512653172,
+        "queries": 983040,
+        "query_accuracy": 0.6057891845703125,
+        "query_loss": 1.935308076238319
+      },
+      "by_condition": [
+        {
+          "condition_id": "pointer_h1_n32",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 178.54286700487137
+        },
+        {
+          "condition_id": "pointer_h2_n32",
+          "correct_queries": 1032,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 138046.50653076172
+        },
+        {
+          "condition_id": "pointer_h4_n32",
+          "correct_queries": 1086,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 137752.67126464844
+        },
+        {
+          "condition_id": "pointer_h8_n32",
+          "correct_queries": 1100,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 137801.67156982422
+        },
+        {
+          "condition_id": "pointer_h1_n64",
+          "correct_queries": 32767,
+          "exact_sets": 2047,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 192.3792660832405
+        },
+        {
+          "condition_id": "pointer_h2_n64",
+          "correct_queries": 506,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 154660.7671508789
+        },
+        {
+          "condition_id": "pointer_h4_n64",
+          "correct_queries": 539,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 154782.95404052734
+        },
+        {
+          "condition_id": "pointer_h8_n64",
+          "correct_queries": 536,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 154776.83142089844
+        },
+        {
+          "condition_id": "pointer_h1_n128",
+          "correct_queries": 32765,
+          "exact_sets": 2045,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 233.87528383731842
+        },
+        {
+          "condition_id": "pointer_h2_n128",
+          "correct_queries": 238,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 167977.23681640625
+        },
+        {
+          "condition_id": "pointer_h4_n128",
+          "correct_queries": 242,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 167938.5220336914
+        },
+        {
+          "condition_id": "pointer_h8_n128",
+          "correct_queries": 251,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 167744.66619873047
+        },
+        {
+          "condition_id": "pointer_h1_n192",
+          "correct_queries": 32759,
+          "exact_sets": 2039,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 317.1091659665108
+        },
+        {
+          "condition_id": "pointer_h2_n192",
+          "correct_queries": 149,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172466.92517089844
+        },
+        {
+          "condition_id": "pointer_h4_n192",
+          "correct_queries": 179,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172465.9324951172
+        },
+        {
+          "condition_id": "pointer_h8_n192",
+          "correct_queries": 173,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172450.33416748047
+        },
+        {
+          "condition_id": "span_s1_n16",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 88.63808944821358
+        },
+        {
+          "condition_id": "span_s4_n16",
+          "correct_queries": 32767,
+          "exact_sets": 2047,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 95.20351850986481
+        },
+        {
+          "condition_id": "span_s8_n16",
+          "correct_queries": 32764,
+          "exact_sets": 2044,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 118.59775501489639
+        },
+        {
+          "condition_id": "span_s16_n16",
+          "correct_queries": 32740,
+          "exact_sets": 2021,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 218.88519370555878
+        },
+        {
+          "condition_id": "span_s1_n32",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 92.4264911711216
+        },
+        {
+          "condition_id": "span_s4_n32",
+          "correct_queries": 32766,
+          "exact_sets": 2046,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 104.29714691638947
+        },
+        {
+          "condition_id": "span_s8_n32",
+          "correct_queries": 32736,
+          "exact_sets": 2017,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 240.20431604981422
+        },
+        {
+          "condition_id": "span_s16_n32",
+          "correct_queries": 32620,
+          "exact_sets": 1910,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 683.7080525159836
+        },
+        {
+          "condition_id": "overwrite_v1_n16",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 96.87542340159416
+        },
+        {
+          "condition_id": "overwrite_v2_n16",
+          "correct_queries": 32761,
+          "exact_sets": 2041,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 126.55124202370644
+        },
+        {
+          "condition_id": "overwrite_v4_n16",
+          "correct_queries": 32757,
+          "exact_sets": 2037,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 150.865629196167
+        },
+        {
+          "condition_id": "overwrite_v1_n32",
+          "correct_queries": 32751,
+          "exact_sets": 2031,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 168.1502002477646
+        },
+        {
+          "condition_id": "overwrite_v2_n32",
+          "correct_queries": 32735,
+          "exact_sets": 2016,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 246.48445856571198
+        },
+        {
+          "condition_id": "overwrite_v4_n32",
+          "correct_queries": 32724,
+          "exact_sets": 2005,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 267.4383057951927
+        }
+      ],
+      "by_family": {
+        "overwrite_recall": {
+          "correct_queries": 196496,
+          "exact_set_accuracy": 0.9910481770833334,
+          "exact_sets": 12178,
+          "examples": 12288,
+          "loss_sum": 1056.3652592301369,
+          "queries": 196608,
+          "query_accuracy": 0.9994303385416666,
+          "query_loss": 0.0053729515545152635
+        },
+        "pointer_chase": {
+          "correct_queries": 137090,
+          "exact_set_accuracy": 0.249603271484375,
+          "exact_sets": 8179,
+          "examples": 32768,
+          "loss_sum": 1899786.9254427552,
+          "queries": 524288,
+          "query_accuracy": 0.2614784240722656,
+          "query_loss": 3.623555994878302
+        },
+        "span_recall": {
+          "correct_queries": 261929,
+          "exact_set_accuracy": 0.98760986328125,
+          "exact_sets": 16181,
+          "examples": 16384,
+          "loss_sum": 1641.9605633318424,
+          "queries": 262144,
+          "query_accuracy": 0.9991798400878906,
+          "query_loss": 0.006263582471206064
+        }
+      },
+      "seconds": 110.19110454432666
+    }
+  },
+  {
+    "initial_factor_multiplier": 1.4142135623730951,
+    "seed": 0,
+    "wiki": {
+      "bits_per_byte": 1.3767759024674002,
+      "correct_targets": 89120,
+      "next_token_accuracy": 0.3144383366381348,
+      "nll": 4.34053287103807,
+      "perplexity": 76.74842545695735,
+      "scored_bytes": 1289122,
+      "scored_targets": 283426,
+      "seconds": 19.709691327996552,
+      "split": "test",
+      "total_nll": 1230219.869506836,
+      "windows": 554
+    },
+    "recall": {
+      "aggregate": {
+        "correct_queries": 595175,
+        "exact_set_accuracy": 0.58896484375,
+        "exact_sets": 36186,
+        "examples": 61440,
+        "loss_sum": 1914235.7820987105,
+        "queries": 983040,
+        "query_accuracy": 0.6054433186848959,
+        "query_loss": 1.9472613343289291
+      },
+      "by_condition": [
+        {
+          "condition_id": "pointer_h1_n32",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 198.70961517095566
+        },
+        {
+          "condition_id": "pointer_h2_n32",
+          "correct_queries": 1077,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 139668.57348632812
+        },
+        {
+          "condition_id": "pointer_h4_n32",
+          "correct_queries": 1070,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 139283.45684814453
+        },
+        {
+          "condition_id": "pointer_h8_n32",
+          "correct_queries": 1119,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 139286.04376220703
+        },
+        {
+          "condition_id": "pointer_h1_n64",
+          "correct_queries": 32765,
+          "exact_sets": 2045,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 223.9569609761238
+        },
+        {
+          "condition_id": "pointer_h2_n64",
+          "correct_queries": 509,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 155781.8914794922
+        },
+        {
+          "condition_id": "pointer_h4_n64",
+          "correct_queries": 519,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 156102.66192626953
+        },
+        {
+          "condition_id": "pointer_h8_n64",
+          "correct_queries": 493,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 155983.11041259766
+        },
+        {
+          "condition_id": "pointer_h1_n128",
+          "correct_queries": 32764,
+          "exact_sets": 2044,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 265.1432613134384
+        },
+        {
+          "condition_id": "pointer_h2_n128",
+          "correct_queries": 250,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 168441.4779663086
+        },
+        {
+          "condition_id": "pointer_h4_n128",
+          "correct_queries": 270,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 168465.84649658203
+        },
+        {
+          "condition_id": "pointer_h8_n128",
+          "correct_queries": 280,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 168336.73303222656
+        },
+        {
+          "condition_id": "pointer_h1_n192",
+          "correct_queries": 32750,
+          "exact_sets": 2030,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 376.55884832143784
+        },
+        {
+          "condition_id": "pointer_h2_n192",
+          "correct_queries": 156,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172462.72497558594
+        },
+        {
+          "condition_id": "pointer_h4_n192",
+          "correct_queries": 189,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172446.2325439453
+        },
+        {
+          "condition_id": "pointer_h8_n192",
+          "correct_queries": 166,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172479.17028808594
+        },
+        {
+          "condition_id": "span_s1_n16",
+          "correct_queries": 32767,
+          "exact_sets": 2047,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 94.65741237998009
+        },
+        {
+          "condition_id": "span_s4_n16",
+          "correct_queries": 32767,
+          "exact_sets": 2047,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 99.35829451680183
+        },
+        {
+          "condition_id": "span_s8_n16",
+          "correct_queries": 32764,
+          "exact_sets": 2044,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 122.28201362490654
+        },
+        {
+          "condition_id": "span_s16_n16",
+          "correct_queries": 32688,
+          "exact_sets": 1969,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 438.73670971393585
+        },
+        {
+          "condition_id": "span_s1_n32",
+          "correct_queries": 32767,
+          "exact_sets": 2047,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 107.2860731780529
+        },
+        {
+          "condition_id": "span_s4_n32",
+          "correct_queries": 32766,
+          "exact_sets": 2046,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 112.7395424246788
+        },
+        {
+          "condition_id": "span_s8_n32",
+          "correct_queries": 32742,
+          "exact_sets": 2022,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 228.75816255807877
+        },
+        {
+          "condition_id": "span_s16_n32",
+          "correct_queries": 32281,
+          "exact_sets": 1627,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 2115.794475674629
+        },
+        {
+          "condition_id": "overwrite_v1_n16",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 98.03043621778488
+        },
+        {
+          "condition_id": "overwrite_v2_n16",
+          "correct_queries": 32760,
+          "exact_sets": 2040,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 140.4909906387329
+        },
+        {
+          "condition_id": "overwrite_v4_n16",
+          "correct_queries": 32753,
+          "exact_sets": 2034,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 164.7092516720295
+        },
+        {
+          "condition_id": "overwrite_v1_n32",
+          "correct_queries": 32753,
+          "exact_sets": 2033,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 161.17566511034966
+        },
+        {
+          "condition_id": "overwrite_v2_n32",
+          "correct_queries": 32730,
+          "exact_sets": 2011,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 267.5465391278267
+        },
+        {
+          "condition_id": "overwrite_v4_n32",
+          "correct_queries": 32724,
+          "exact_sets": 2004,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 281.9246283173561
+        }
+      ],
+      "by_family": {
+        "overwrite_recall": {
+          "correct_queries": 196488,
+          "exact_set_accuracy": 0.9903971354166666,
+          "exact_sets": 12170,
+          "examples": 12288,
+          "loss_sum": 1113.8775110840797,
+          "queries": 196608,
+          "query_accuracy": 0.9993896484375,
+          "query_loss": 0.0056654739943648265
+        },
+        "pointer_chase": {
+          "correct_queries": 137145,
+          "exact_set_accuracy": 0.249237060546875,
+          "exact_sets": 8167,
+          "examples": 32768,
+          "loss_sum": 1909802.2919035554,
+          "queries": 524288,
+          "query_accuracy": 0.2615833282470703,
+          "query_loss": 3.6426587904044254
+        },
+        "span_recall": {
+          "correct_queries": 261542,
+          "exact_set_accuracy": 0.96734619140625,
+          "exact_sets": 15849,
+          "examples": 16384,
+          "loss_sum": 3319.612684071064,
+          "queries": 262144,
+          "query_accuracy": 0.9977035522460938,
+          "query_loss": 0.012663317428859955
+        }
+      },
+      "seconds": 100.09943899512291
+    }
+  },
+  {
+    "initial_factor_multiplier": 2,
+    "seed": 0,
+    "wiki": {
+      "bits_per_byte": 1.3861005730021236,
+      "correct_targets": 88414,
+      "next_token_accuracy": 0.31194738661943505,
+      "nll": 4.3699305666943,
+      "perplexity": 79.03814362945062,
+      "scored_bytes": 1289122,
+      "scored_targets": 283426,
+      "seconds": 18.64489451237023,
+      "split": "test",
+      "total_nll": 1238551.9407958984,
+      "windows": 554
+    },
+    "recall": {
+      "aggregate": {
+        "correct_queries": 594616,
+        "exact_set_accuracy": 0.582177734375,
+        "exact_sets": 35769,
+        "examples": 61440,
+        "loss_sum": 1925561.1519106925,
+        "queries": 983040,
+        "query_accuracy": 0.6048746744791667,
+        "query_loss": 1.9587820962633182
+      },
+      "by_condition": [
+        {
+          "condition_id": "pointer_h1_n32",
+          "correct_queries": 32764,
+          "exact_sets": 2044,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 261.46175849437714
+        },
+        {
+          "condition_id": "pointer_h2_n32",
+          "correct_queries": 1021,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 141057.6590576172
+        },
+        {
+          "condition_id": "pointer_h4_n32",
+          "correct_queries": 1063,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 140726.3226928711
+        },
+        {
+          "condition_id": "pointer_h8_n32",
+          "correct_queries": 1074,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 140719.88214111328
+        },
+        {
+          "condition_id": "pointer_h1_n64",
+          "correct_queries": 32756,
+          "exact_sets": 2036,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 326.3699249625206
+        },
+        {
+          "condition_id": "pointer_h2_n64",
+          "correct_queries": 514,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 156922.17248535156
+        },
+        {
+          "condition_id": "pointer_h4_n64",
+          "correct_queries": 532,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 157285.26239013672
+        },
+        {
+          "condition_id": "pointer_h8_n64",
+          "correct_queries": 541,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 156913.48010253906
+        },
+        {
+          "condition_id": "pointer_h1_n128",
+          "correct_queries": 32707,
+          "exact_sets": 1988,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 584.8620603084564
+        },
+        {
+          "condition_id": "pointer_h2_n128",
+          "correct_queries": 249,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 168932.7276611328
+        },
+        {
+          "condition_id": "pointer_h4_n128",
+          "correct_queries": 248,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 168961.51678466797
+        },
+        {
+          "condition_id": "pointer_h8_n128",
+          "correct_queries": 247,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 168745.5838623047
+        },
+        {
+          "condition_id": "pointer_h1_n192",
+          "correct_queries": 32631,
+          "exact_sets": 1915,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 1088.031260251999
+        },
+        {
+          "condition_id": "pointer_h2_n192",
+          "correct_queries": 151,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172476.09466552734
+        },
+        {
+          "condition_id": "pointer_h4_n192",
+          "correct_queries": 161,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172485.59716796875
+        },
+        {
+          "condition_id": "pointer_h8_n192",
+          "correct_queries": 186,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172474.74237060547
+        },
+        {
+          "condition_id": "span_s1_n16",
+          "correct_queries": 32767,
+          "exact_sets": 2047,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 103.88251459598541
+        },
+        {
+          "condition_id": "span_s4_n16",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 99.44064676761627
+        },
+        {
+          "condition_id": "span_s8_n16",
+          "correct_queries": 32763,
+          "exact_sets": 2043,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 137.20154377818108
+        },
+        {
+          "condition_id": "span_s16_n16",
+          "correct_queries": 32689,
+          "exact_sets": 1972,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 470.2718741297722
+        },
+        {
+          "condition_id": "span_s1_n32",
+          "correct_queries": 32765,
+          "exact_sets": 2045,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 114.69910407066345
+        },
+        {
+          "condition_id": "span_s4_n32",
+          "correct_queries": 32756,
+          "exact_sets": 2036,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 160.79390534758568
+        },
+        {
+          "condition_id": "span_s8_n32",
+          "correct_queries": 32682,
+          "exact_sets": 1963,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 484.1192780137062
+        },
+        {
+          "condition_id": "span_s16_n32",
+          "correct_queries": 32236,
+          "exact_sets": 1592,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 2199.4905854463577
+        },
+        {
+          "condition_id": "overwrite_v1_n16",
+          "correct_queries": 32766,
+          "exact_sets": 2046,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 104.11450558900833
+        },
+        {
+          "condition_id": "overwrite_v2_n16",
+          "correct_queries": 32750,
+          "exact_sets": 2030,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 195.87552839517593
+        },
+        {
+          "condition_id": "overwrite_v4_n16",
+          "correct_queries": 32749,
+          "exact_sets": 2030,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 193.87409663200378
+        },
+        {
+          "condition_id": "overwrite_v1_n32",
+          "correct_queries": 32728,
+          "exact_sets": 2009,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 286.40086510777473
+        },
+        {
+          "condition_id": "overwrite_v2_n32",
+          "correct_queries": 32688,
+          "exact_sets": 1975,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 489.2155829966068
+        },
+        {
+          "condition_id": "overwrite_v4_n32",
+          "correct_queries": 32664,
+          "exact_sets": 1950,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 560.0054939687252
+        }
+      ],
+      "by_family": {
+        "overwrite_recall": {
+          "correct_queries": 196345,
+          "exact_set_accuracy": 0.9798177083333334,
+          "exact_sets": 12040,
+          "examples": 12288,
+          "loss_sum": 1829.4860726892948,
+          "queries": 196608,
+          "query_accuracy": 0.9986623128255209,
+          "query_loss": 0.009305247358649163
+        },
+        "pointer_chase": {
+          "correct_queries": 136845,
+          "exact_set_accuracy": 0.243621826171875,
+          "exact_sets": 7983,
+          "examples": 32768,
+          "loss_sum": 1919961.7663858533,
+          "queries": 524288,
+          "query_accuracy": 0.26101112365722656,
+          "query_loss": 3.66203645016833
+        },
+        "span_recall": {
+          "correct_queries": 261426,
+          "exact_set_accuracy": 0.9610595703125,
+          "exact_sets": 15746,
+          "examples": 16384,
+          "loss_sum": 3769.899452149868,
+          "queries": 262144,
+          "query_accuracy": 0.9972610473632812,
+          "query_loss": 0.014381025131797287
+        }
+      },
+      "seconds": 239.2732828427106
+    }
+  }
+]

@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this research note, please cite it as below."
+title: "Block Delta Memory: Sparse Recurrent Memory with Dense Execution"
+type: software
+authors:
+  - name: p0rc314in
+year: 2026
+repository-code: "https://github.com/p0rc314in/bdm"

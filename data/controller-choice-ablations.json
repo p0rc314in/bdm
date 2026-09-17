@@ -1,0 +1,1218 @@
+[
+  {
+    "arm": "baseline",
+    "mechanism": "No short convolution; GDN2 scaled-Xavier initialization of output gate and projection.",
+    "wiki": {
+      "bits_per_byte": 1.3708628275939534,
+      "correct_targets": 89453,
+      "next_token_accuracy": 0.3156132464911476,
+      "nll": 4.321890842359977,
+      "perplexity": 75.33093263052363,
+      "scored_bytes": 1289122,
+      "scored_targets": 283426,
+      "seconds": 21.11372540285811,
+      "split": "test",
+      "total_nll": 1224936.2338867188,
+      "windows": 554
+    },
+    "recall": {
+      "aggregate": {
+        "correct_queries": 595589,
+        "exact_set_accuracy": 0.5958984375,
+        "exact_sets": 36612,
+        "examples": 61440,
+        "loss_sum": 1904653.657705307,
+        "queries": 983040,
+        "query_accuracy": 0.6058644612630208,
+        "query_loss": 1.9375138933362905
+      },
+      "by_condition": [
+        {
+          "condition_id": "pointer_h1_n32",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 186.76836609840393
+        },
+        {
+          "condition_id": "pointer_h2_n32",
+          "correct_queries": 1022,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 138409.7221069336
+        },
+        {
+          "condition_id": "pointer_h4_n32",
+          "correct_queries": 1023,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 138245.25427246094
+        },
+        {
+          "condition_id": "pointer_h8_n32",
+          "correct_queries": 1078,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 138066.70635986328
+        },
+        {
+          "condition_id": "pointer_h1_n64",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 198.73068344593048
+        },
+        {
+          "condition_id": "pointer_h2_n64",
+          "correct_queries": 499,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 154940.66442871094
+        },
+        {
+          "condition_id": "pointer_h4_n64",
+          "correct_queries": 521,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 155168.98120117188
+        },
+        {
+          "condition_id": "pointer_h8_n64",
+          "correct_queries": 553,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 154968.6102294922
+        },
+        {
+          "condition_id": "pointer_h1_n128",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 234.68801963329315
+        },
+        {
+          "condition_id": "pointer_h2_n128",
+          "correct_queries": 251,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 168115.15368652344
+        },
+        {
+          "condition_id": "pointer_h4_n128",
+          "correct_queries": 248,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 168116.05987548828
+        },
+        {
+          "condition_id": "pointer_h8_n128",
+          "correct_queries": 274,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 167921.7781982422
+        },
+        {
+          "condition_id": "pointer_h1_n192",
+          "correct_queries": 32761,
+          "exact_sets": 2041,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 314.6110606789589
+        },
+        {
+          "condition_id": "pointer_h2_n192",
+          "correct_queries": 169,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172455.2431640625
+        },
+        {
+          "condition_id": "pointer_h4_n192",
+          "correct_queries": 199,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172445.82299804688
+        },
+        {
+          "condition_id": "pointer_h8_n192",
+          "correct_queries": 185,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172458.47235107422
+        },
+        {
+          "condition_id": "span_s1_n16",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 88.59393182396889
+        },
+        {
+          "condition_id": "span_s4_n16",
+          "correct_queries": 32767,
+          "exact_sets": 2047,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 95.80456158518791
+        },
+        {
+          "condition_id": "span_s8_n16",
+          "correct_queries": 32766,
+          "exact_sets": 2046,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 108.76419919729233
+        },
+        {
+          "condition_id": "span_s16_n16",
+          "correct_queries": 32735,
+          "exact_sets": 2015,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 249.7871306836605
+        },
+        {
+          "condition_id": "span_s1_n32",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 92.11544147133827
+        },
+        {
+          "condition_id": "span_s4_n32",
+          "correct_queries": 32767,
+          "exact_sets": 2047,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 100.68013009428978
+        },
+        {
+          "condition_id": "span_s8_n32",
+          "correct_queries": 32754,
+          "exact_sets": 2034,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 167.3420559167862
+        },
+        {
+          "condition_id": "span_s16_n32",
+          "correct_queries": 32619,
+          "exact_sets": 1904,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 714.2661494016647
+        },
+        {
+          "condition_id": "overwrite_v1_n16",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 94.20790159702301
+        },
+        {
+          "condition_id": "overwrite_v2_n16",
+          "correct_queries": 32766,
+          "exact_sets": 2046,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 119.63975343108177
+        },
+        {
+          "condition_id": "overwrite_v4_n16",
+          "correct_queries": 32758,
+          "exact_sets": 2038,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 138.19168159365654
+        },
+        {
+          "condition_id": "overwrite_v1_n32",
+          "correct_queries": 32762,
+          "exact_sets": 2042,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 114.41071265935898
+        },
+        {
+          "condition_id": "overwrite_v2_n32",
+          "correct_queries": 32750,
+          "exact_sets": 2030,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 176.39424151182175
+        },
+        {
+          "condition_id": "overwrite_v4_n32",
+          "correct_queries": 32754,
+          "exact_sets": 2034,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 146.19281241297722
+        }
+      ],
+      "by_family": {
+        "overwrite_recall": {
+          "correct_queries": 196558,
+          "exact_set_accuracy": 0.9959309895833334,
+          "exact_sets": 12238,
+          "examples": 12288,
+          "loss_sum": 789.0371032059193,
+          "queries": 196608,
+          "query_accuracy": 0.9997456868489584,
+          "query_loss": 0.004013250240101722
+        },
+        "pointer_chase": {
+          "correct_queries": 137087,
+          "exact_set_accuracy": 0.249786376953125,
+          "exact_sets": 8185,
+          "examples": 32768,
+          "loss_sum": 1902247.267001927,
+          "queries": 524288,
+          "query_accuracy": 0.2614727020263672,
+          "query_loss": 3.62824872398744
+        },
+        "span_recall": {
+          "correct_queries": 261944,
+          "exact_set_accuracy": 0.98809814453125,
+          "exact_sets": 16189,
+          "examples": 16384,
+          "loss_sum": 1617.3536001741886,
+          "queries": 262144,
+          "query_accuracy": 0.999237060546875,
+          "query_loss": 0.006169714356133227
+        }
+      },
+      "seconds": 204.54865349596366
+    }
+  },
+  {
+    "arm": "convolution",
+    "mechanism": "Enable native causal depthwise size-4 Q/K/V convolutions before SiLU, with no convolution biases.",
+    "wiki": {
+      "bits_per_byte": 1.3612907349407584,
+      "correct_targets": 91011,
+      "next_token_accuracy": 0.321110272169808,
+      "nll": 4.291713104115608,
+      "perplexity": 73.0915747865724,
+      "scored_bytes": 1289122,
+      "scored_targets": 283426,
+      "seconds": 22.758639762178063,
+      "split": "test",
+      "total_nll": 1216383.0782470703,
+      "windows": 554
+    },
+    "recall": {
+      "aggregate": {
+        "correct_queries": 541588,
+        "exact_set_accuracy": 0.3904296875,
+        "exact_sets": 23988,
+        "examples": 61440,
+        "loss_sum": 2177631.1476683915,
+        "queries": 983040,
+        "query_accuracy": 0.5509318033854167,
+        "query_loss": 2.2152009558801184
+      },
+      "by_condition": [
+        {
+          "condition_id": "pointer_h1_n32",
+          "correct_queries": 30434,
+          "exact_sets": 596,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 12265.349960327148
+        },
+        {
+          "condition_id": "pointer_h2_n32",
+          "correct_queries": 966,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 144515.2254638672
+        },
+        {
+          "condition_id": "pointer_h4_n32",
+          "correct_queries": 1091,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 144153.23193359375
+        },
+        {
+          "condition_id": "pointer_h8_n32",
+          "correct_queries": 1020,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 144163.29913330078
+        },
+        {
+          "condition_id": "pointer_h1_n64",
+          "correct_queries": 26756,
+          "exact_sets": 70,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 27710.780906677246
+        },
+        {
+          "condition_id": "pointer_h2_n64",
+          "correct_queries": 491,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 159705.35821533203
+        },
+        {
+          "condition_id": "pointer_h4_n64",
+          "correct_queries": 533,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 159823.7374267578
+        },
+        {
+          "condition_id": "pointer_h8_n64",
+          "correct_queries": 487,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 159724.8451538086
+        },
+        {
+          "condition_id": "pointer_h1_n128",
+          "correct_queries": 19798,
+          "exact_sets": 1,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 57482.430755615234
+        },
+        {
+          "condition_id": "pointer_h2_n128",
+          "correct_queries": 251,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 169913.21087646484
+        },
+        {
+          "condition_id": "pointer_h4_n128",
+          "correct_queries": 259,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 169886.17517089844
+        },
+        {
+          "condition_id": "pointer_h8_n128",
+          "correct_queries": 283,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 169723.45526123047
+        },
+        {
+          "condition_id": "pointer_h1_n192",
+          "correct_queries": 14602,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 82907.96264648438
+        },
+        {
+          "condition_id": "pointer_h2_n192",
+          "correct_queries": 150,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172443.6410522461
+        },
+        {
+          "condition_id": "pointer_h4_n192",
+          "correct_queries": 182,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172426.41033935547
+        },
+        {
+          "condition_id": "pointer_h8_n192",
+          "correct_queries": 172,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172429.552734375
+        },
+        {
+          "condition_id": "span_s1_n16",
+          "correct_queries": 32763,
+          "exact_sets": 2043,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 135.6353133916855
+        },
+        {
+          "condition_id": "span_s4_n16",
+          "correct_queries": 32750,
+          "exact_sets": 2030,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 189.26783260703087
+        },
+        {
+          "condition_id": "span_s8_n16",
+          "correct_queries": 32524,
+          "exact_sets": 1829,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 1061.2055374979973
+        },
+        {
+          "condition_id": "span_s16_n16",
+          "correct_queries": 27850,
+          "exact_sets": 235,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 18898.279788970947
+        },
+        {
+          "condition_id": "span_s1_n32",
+          "correct_queries": 32748,
+          "exact_sets": 2028,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 204.72794526815414
+        },
+        {
+          "condition_id": "span_s4_n32",
+          "correct_queries": 32708,
+          "exact_sets": 1988,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 356.41273298859596
+        },
+        {
+          "condition_id": "span_s8_n32",
+          "correct_queries": 32087,
+          "exact_sets": 1507,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 2669.0904079675674
+        },
+        {
+          "condition_id": "span_s16_n32",
+          "correct_queries": 24862,
+          "exact_sets": 67,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 30973.923999786377
+        },
+        {
+          "condition_id": "overwrite_v1_n16",
+          "correct_queries": 32728,
+          "exact_sets": 2008,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 275.51073956489563
+        },
+        {
+          "condition_id": "overwrite_v2_n16",
+          "correct_queries": 32710,
+          "exact_sets": 1994,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 348.9171899855137
+        },
+        {
+          "condition_id": "overwrite_v4_n16",
+          "correct_queries": 32729,
+          "exact_sets": 2009,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 294.95495492219925
+        },
+        {
+          "condition_id": "overwrite_v1_n32",
+          "correct_queries": 32540,
+          "exact_sets": 1855,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 1013.0417438745499
+        },
+        {
+          "condition_id": "overwrite_v2_n32",
+          "correct_queries": 32547,
+          "exact_sets": 1856,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 990.138110101223
+        },
+        {
+          "condition_id": "overwrite_v4_n32",
+          "correct_queries": 32567,
+          "exact_sets": 1872,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 945.3743411302567
+        }
+      ],
+      "by_family": {
+        "overwrite_recall": {
+          "correct_queries": 195821,
+          "exact_set_accuracy": 0.9435221354166666,
+          "exact_sets": 11594,
+          "examples": 12288,
+          "loss_sum": 3867.937079578638,
+          "queries": 196608,
+          "query_accuracy": 0.9959971110026041,
+          "query_loss": 0.019673345334770904
+        },
+        "pointer_chase": {
+          "correct_queries": 97475,
+          "exact_set_accuracy": 0.020355224609375,
+          "exact_sets": 667,
+          "examples": 32768,
+          "loss_sum": 2119274.6670303345,
+          "queries": 524288,
+          "query_accuracy": 0.18591880798339844,
+          "query_loss": 4.042195638714475
+        },
+        "span_recall": {
+          "correct_queries": 248292,
+          "exact_set_accuracy": 0.71575927734375,
+          "exact_sets": 11727,
+          "examples": 16384,
+          "loss_sum": 54488.543558478355,
+          "queries": 262144,
+          "query_accuracy": 0.9471588134765625,
+          "query_loss": 0.2078572981204161
+        }
+      },
+      "seconds": 271.55755589855835
+    }
+  },
+  {
+    "arm": "sdm_gate_init",
+    "mechanism": "Initialize only output_gate.weight with SDM truncated normal, nominal std D^(-1/2), cut at three std.",
+    "wiki": {
+      "bits_per_byte": 1.3724212678270864,
+      "correct_targets": 89559,
+      "next_token_accuracy": 0.31598724181973425,
+      "nll": 4.326804104603555,
+      "perplexity": 75.70196399840056,
+      "scored_bytes": 1289122,
+      "scored_targets": 283426,
+      "seconds": 20.58234977349639,
+      "split": "test",
+      "total_nll": 1226328.7801513672,
+      "windows": 554
+    },
+    "recall": {
+      "aggregate": {
+        "correct_queries": 594818,
+        "exact_set_accuracy": 0.5866373697916667,
+        "exact_sets": 36043,
+        "examples": 61440,
+        "loss_sum": 1909187.8838819563,
+        "queries": 983040,
+        "query_accuracy": 0.6050801595052083,
+        "query_loss": 1.9421263467223677
+      },
+      "by_condition": [
+        {
+          "condition_id": "pointer_h1_n32",
+          "correct_queries": 32764,
+          "exact_sets": 2044,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 212.26950460672379
+        },
+        {
+          "condition_id": "pointer_h2_n32",
+          "correct_queries": 1034,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 138838.30932617188
+        },
+        {
+          "condition_id": "pointer_h4_n32",
+          "correct_queries": 1025,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 138519.216796875
+        },
+        {
+          "condition_id": "pointer_h8_n32",
+          "correct_queries": 1041,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 138520.44274902344
+        },
+        {
+          "condition_id": "pointer_h1_n64",
+          "correct_queries": 32762,
+          "exact_sets": 2042,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 242.9933009147644
+        },
+        {
+          "condition_id": "pointer_h2_n64",
+          "correct_queries": 539,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 155170.63983154297
+        },
+        {
+          "condition_id": "pointer_h4_n64",
+          "correct_queries": 508,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 155315.6234741211
+        },
+        {
+          "condition_id": "pointer_h8_n64",
+          "correct_queries": 493,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 155204.6851196289
+        },
+        {
+          "condition_id": "pointer_h1_n128",
+          "correct_queries": 32748,
+          "exact_sets": 2028,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 362.81745797395706
+        },
+        {
+          "condition_id": "pointer_h2_n128",
+          "correct_queries": 232,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 168113.3631591797
+        },
+        {
+          "condition_id": "pointer_h4_n128",
+          "correct_queries": 219,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 168092.53778076172
+        },
+        {
+          "condition_id": "pointer_h8_n128",
+          "correct_queries": 261,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 167897.26629638672
+        },
+        {
+          "condition_id": "pointer_h1_n192",
+          "correct_queries": 32731,
+          "exact_sets": 2011,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 524.8024283647537
+        },
+        {
+          "condition_id": "pointer_h2_n192",
+          "correct_queries": 159,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172478.74963378906
+        },
+        {
+          "condition_id": "pointer_h4_n192",
+          "correct_queries": 188,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172493.53875732422
+        },
+        {
+          "condition_id": "pointer_h8_n192",
+          "correct_queries": 168,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172475.8588256836
+        },
+        {
+          "condition_id": "span_s1_n16",
+          "correct_queries": 32767,
+          "exact_sets": 2047,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 97.71440500020981
+        },
+        {
+          "condition_id": "span_s4_n16",
+          "correct_queries": 32766,
+          "exact_sets": 2046,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 103.43926456570625
+        },
+        {
+          "condition_id": "span_s8_n16",
+          "correct_queries": 32761,
+          "exact_sets": 2041,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 134.24485638737679
+        },
+        {
+          "condition_id": "span_s16_n16",
+          "correct_queries": 32705,
+          "exact_sets": 1988,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 413.74931812286377
+        },
+        {
+          "condition_id": "span_s1_n32",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 96.26957884430885
+        },
+        {
+          "condition_id": "span_s4_n32",
+          "correct_queries": 32764,
+          "exact_sets": 2044,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 128.20295828580856
+        },
+        {
+          "condition_id": "span_s8_n32",
+          "correct_queries": 32706,
+          "exact_sets": 1986,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 343.0772948861122
+        },
+        {
+          "condition_id": "span_s16_n32",
+          "correct_queries": 32348,
+          "exact_sets": 1670,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 1776.2967044711113
+        },
+        {
+          "condition_id": "overwrite_v1_n16",
+          "correct_queries": 32764,
+          "exact_sets": 2044,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 117.95031571388245
+        },
+        {
+          "condition_id": "overwrite_v2_n16",
+          "correct_queries": 32755,
+          "exact_sets": 2035,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 167.72246307134628
+        },
+        {
+          "condition_id": "overwrite_v4_n16",
+          "correct_queries": 32744,
+          "exact_sets": 2024,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 211.17357748746872
+        },
+        {
+          "condition_id": "overwrite_v1_n32",
+          "correct_queries": 32719,
+          "exact_sets": 2001,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 299.70658269524574
+        },
+        {
+          "condition_id": "overwrite_v2_n32",
+          "correct_queries": 32697,
+          "exact_sets": 1977,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 381.0023016631603
+        },
+        {
+          "condition_id": "overwrite_v4_n32",
+          "correct_queries": 32682,
+          "exact_sets": 1967,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 454.2198184132576
+        }
+      ],
+      "by_family": {
+        "overwrite_recall": {
+          "correct_queries": 196361,
+          "exact_set_accuracy": 0.98046875,
+          "exact_sets": 12048,
+          "examples": 12288,
+          "loss_sum": 1631.7750590443611,
+          "queries": 196608,
+          "query_accuracy": 0.9987436930338541,
+          "query_loss": 0.008299637141135463
+        },
+        "pointer_chase": {
+          "correct_queries": 136872,
+          "exact_set_accuracy": 0.247955322265625,
+          "exact_sets": 8125,
+          "examples": 32768,
+          "loss_sum": 1904463.1144423485,
+          "queries": 524288,
+          "query_accuracy": 0.2610626220703125,
+          "query_loss": 3.632475117573449
+        },
+        "span_recall": {
+          "correct_queries": 261585,
+          "exact_set_accuracy": 0.9686279296875,
+          "exact_sets": 15870,
+          "examples": 16384,
+          "loss_sum": 3092.9943805634975,
+          "queries": 262144,
+          "query_accuracy": 0.9978675842285156,
+          "query_loss": 0.011798837206129065
+        }
+      },
+      "seconds": 204.26431275112554
+    }
+  },
+  {
+    "arm": "sdm_projection_init",
+    "mechanism": "Initialize only o_proj.weight with SDM truncated normal, nominal std D^(-1/2), cut at three std.",
+    "wiki": {
+      "bits_per_byte": 1.3799968423469169,
+      "correct_targets": 89149,
+      "next_token_accuracy": 0.3145406561148236,
+      "nll": 4.350687461482037,
+      "perplexity": 77.53174469669378,
+      "scored_bytes": 1289122,
+      "scored_targets": 283426,
+      "seconds": 21.668546152301133,
+      "split": "test",
+      "total_nll": 1233097.9444580078,
+      "windows": 554
+    },
+    "recall": {
+      "aggregate": {
+        "correct_queries": 594763,
+        "exact_set_accuracy": 0.5856608072916667,
+        "exact_sets": 35983,
+        "examples": 61440,
+        "loss_sum": 1911665.6430830956,
+        "queries": 983040,
+        "query_accuracy": 0.6050242106119792,
+        "query_loss": 1.9446468537222246
+      },
+      "by_condition": [
+        {
+          "condition_id": "pointer_h1_n32",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 198.26097929477692
+        },
+        {
+          "condition_id": "pointer_h2_n32",
+          "correct_queries": 1026,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 138838.31225585938
+        },
+        {
+          "condition_id": "pointer_h4_n32",
+          "correct_queries": 1060,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 138528.8819580078
+        },
+        {
+          "condition_id": "pointer_h8_n32",
+          "correct_queries": 1066,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 138574.43719482422
+        },
+        {
+          "condition_id": "pointer_h1_n64",
+          "correct_queries": 32767,
+          "exact_sets": 2047,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 217.36895871162415
+        },
+        {
+          "condition_id": "pointer_h2_n64",
+          "correct_queries": 510,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 155442.36962890625
+        },
+        {
+          "condition_id": "pointer_h4_n64",
+          "correct_queries": 494,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 155639.6658935547
+        },
+        {
+          "condition_id": "pointer_h8_n64",
+          "correct_queries": 499,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 155467.34368896484
+        },
+        {
+          "condition_id": "pointer_h1_n128",
+          "correct_queries": 32764,
+          "exact_sets": 2044,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 271.17069613933563
+        },
+        {
+          "condition_id": "pointer_h2_n128",
+          "correct_queries": 240,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 168405.85485839844
+        },
+        {
+          "condition_id": "pointer_h4_n128",
+          "correct_queries": 271,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 168378.53955078125
+        },
+        {
+          "condition_id": "pointer_h8_n128",
+          "correct_queries": 281,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 168326.36944580078
+        },
+        {
+          "condition_id": "pointer_h1_n192",
+          "correct_queries": 32757,
+          "exact_sets": 2037,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 375.5158731341362
+        },
+        {
+          "condition_id": "pointer_h2_n192",
+          "correct_queries": 158,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172447.85327148438
+        },
+        {
+          "condition_id": "pointer_h4_n192",
+          "correct_queries": 175,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172437.5723876953
+        },
+        {
+          "condition_id": "pointer_h8_n192",
+          "correct_queries": 163,
+          "exact_sets": 0,
+          "examples": 2048,
+          "family": "pointer_chase",
+          "loss_sum": 172430.10314941406
+        },
+        {
+          "condition_id": "span_s1_n16",
+          "correct_queries": 32767,
+          "exact_sets": 2047,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 97.77750024199486
+        },
+        {
+          "condition_id": "span_s4_n16",
+          "correct_queries": 32766,
+          "exact_sets": 2046,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 109.08407258987427
+        },
+        {
+          "condition_id": "span_s8_n16",
+          "correct_queries": 32754,
+          "exact_sets": 2034,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 160.59358769655228
+        },
+        {
+          "condition_id": "span_s16_n16",
+          "correct_queries": 32587,
+          "exact_sets": 1886,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 894.6606781482697
+        },
+        {
+          "condition_id": "span_s1_n32",
+          "correct_queries": 32768,
+          "exact_sets": 2048,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 99.71313911676407
+        },
+        {
+          "condition_id": "span_s4_n32",
+          "correct_queries": 32761,
+          "exact_sets": 2041,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 138.73740661144257
+        },
+        {
+          "condition_id": "span_s8_n32",
+          "correct_queries": 32724,
+          "exact_sets": 2006,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 283.4533774256706
+        },
+        {
+          "condition_id": "span_s16_n32",
+          "correct_queries": 32196,
+          "exact_sets": 1572,
+          "examples": 2048,
+          "family": "span_recall",
+          "loss_sum": 2503.085036098957
+        },
+        {
+          "condition_id": "overwrite_v1_n16",
+          "correct_queries": 32759,
+          "exact_sets": 2039,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 129.9279606938362
+        },
+        {
+          "condition_id": "overwrite_v2_n16",
+          "correct_queries": 32756,
+          "exact_sets": 2036,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 157.749492675066
+        },
+        {
+          "condition_id": "overwrite_v4_n16",
+          "correct_queries": 32751,
+          "exact_sets": 2031,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 199.61704775691032
+        },
+        {
+          "condition_id": "overwrite_v1_n32",
+          "correct_queries": 32743,
+          "exact_sets": 2023,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 225.4559099972248
+        },
+        {
+          "condition_id": "overwrite_v2_n32",
+          "correct_queries": 32721,
+          "exact_sets": 2004,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 298.91318196058273
+        },
+        {
+          "condition_id": "overwrite_v4_n32",
+          "correct_queries": 32711,
+          "exact_sets": 1994,
+          "examples": 2048,
+          "family": "overwrite_recall",
+          "loss_sum": 387.25490111112595
+        }
+      ],
+      "by_family": {
+        "overwrite_recall": {
+          "correct_queries": 196441,
+          "exact_set_accuracy": 0.9868977864583334,
+          "exact_sets": 12127,
+          "examples": 12288,
+          "loss_sum": 1398.918494194746,
+          "queries": 196608,
+          "query_accuracy": 0.9991505940755209,
+          "query_loss": 0.0071152674061825865
+        },
+        "pointer_chase": {
+          "correct_queries": 136999,
+          "exact_set_accuracy": 0.24951171875,
+          "exact_sets": 8176,
+          "examples": 32768,
+          "loss_sum": 1905979.6197909713,
+          "queries": 524288,
+          "query_accuracy": 0.2613048553466797,
+          "query_loss": 3.6353676219767976
+        },
+        "span_recall": {
+          "correct_queries": 261323,
+          "exact_set_accuracy": 0.95703125,
+          "exact_sets": 15680,
+          "examples": 16384,
+          "loss_sum": 4287.104797929525,
+          "queries": 262144,
+          "query_accuracy": 0.9968681335449219,
+          "query_loss": 0.01635400695010958
+        }
+      },
+      "seconds": 204.30696958093904
+    }
+  }
+]

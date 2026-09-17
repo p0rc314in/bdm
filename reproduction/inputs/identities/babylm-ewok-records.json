@@ -1,0 +1,105 @@
+{
+  "candidates": 15236,
+  "dataset": "ewok-core/ewok-core-1.0",
+  "dataset_revision": "34d912a608066c92e2990a0328ffc3bd9a716042",
+  "examples": 7618,
+  "format": "babylm2026_full_ewok_gpt2_v1",
+  "gpt2_tokens": 261758,
+  "official_evaluator_revision": "6f825c291e2c4c78ad33b1935fd64d45f52642dc",
+  "records": {
+    "candidate_offsets": {
+      "bytes": 122024,
+      "dtype": "uint64",
+      "path": "candidate_offsets.npy",
+      "sha256": "eb312306ad1462be688a7724baf266d885f4a538886d6d8306d8d9fc6ce8b792",
+      "shape": [
+        15237
+      ]
+    },
+    "example_offsets": {
+      "bytes": 30604,
+      "dtype": "uint32",
+      "path": "example_offsets.npy",
+      "sha256": "2cd2848d28f5414336cc35c7a8a399e67a7851ec523201a432d4bf283c50e528",
+      "shape": [
+        7619
+      ]
+    },
+    "labels": {
+      "bytes": 7746,
+      "dtype": "uint8",
+      "path": "labels.npy",
+      "sha256": "31d88ea6fc1c1014fb3b6890fa717bf93298f192f52ddf269d94baeb308f6d22",
+      "shape": [
+        7618
+      ]
+    },
+    "length_normalized": {
+      "bytes": 7746,
+      "dtype": "uint8",
+      "path": "length_normalized.npy",
+      "sha256": "31d88ea6fc1c1014fb3b6890fa717bf93298f192f52ddf269d94baeb308f6d22",
+      "shape": [
+        7618
+      ]
+    },
+    "score_starts": {
+      "bytes": 61072,
+      "dtype": "uint32",
+      "path": "score_starts.npy",
+      "sha256": "d0c30a1a8f429bbb53e07d8af793d48e29953abc52578e6d770648769996e49b",
+      "shape": [
+        15236
+      ]
+    },
+    "subdomain_ids": {
+      "bytes": 15364,
+      "dtype": "uint16",
+      "path": "subdomain_ids.npy",
+      "sha256": "78e8f9830558890555f43574669a557c4007d903bc11cb2d5db811e775ac1fd8",
+      "shape": [
+        7618
+      ]
+    },
+    "task_ids": {
+      "bytes": 7746,
+      "dtype": "uint8",
+      "path": "task_ids.npy",
+      "sha256": "31d88ea6fc1c1014fb3b6890fa717bf93298f192f52ddf269d94baeb308f6d22",
+      "shape": [
+        7618
+      ]
+    },
+    "tokens": {
+      "bytes": 523516,
+      "dtype": "uint16",
+      "path": "tokens.bin",
+      "sha256": "67b6ddf15a9ae65e193a151db6565bb35d35eb6a002fe7b80a92346a524e0715",
+      "shape": [
+        261758
+      ]
+    }
+  },
+  "subdomains": [
+    "agent-properties",
+    "material-dynamics",
+    "material-properties",
+    "physical-dynamics",
+    "physical-interactions",
+    "physical-relations",
+    "quantitative-properties",
+    "social-interactions",
+    "social-properties",
+    "social-relations",
+    "spatial-relations"
+  ],
+  "tasks": [
+    "ewok"
+  ],
+  "tokenizer": {
+    "encoding": "gpt2",
+    "eot": 50256,
+    "implementation": "tiktoken"
+  },
+  "vocab_sha256": "f812e2f4b723598964d3cbbd860e7b18a8d7e4902859fe74f4a6104694a41ceb"
+}

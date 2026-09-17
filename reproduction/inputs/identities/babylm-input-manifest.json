@@ -1,0 +1,256 @@
+{
+  "corpus": {
+    "dataset": "BabyLM-community/BabyLM-2026-Strict",
+    "excluded_tail_tokens": 131,
+    "gpt2_tokens": 168511619,
+    "revision": "9e57baaaa91ac3c638746be14d1d5fa6c789f4cf",
+    "source_order": [
+      "bnc_spoken.train.txt",
+      "childes.train.txt",
+      "gutenberg.train.txt",
+      "open_subtitles.train.txt",
+      "simple_wiki.train.txt",
+      "switchboard.train.txt"
+    ],
+    "source_rows": 11601896,
+    "source_summaries": [
+      {
+        "gpt2_tokens_including_eot": 10365974,
+        "name": "bnc_spoken.train.txt",
+        "rows": 803341,
+        "source_bytes": 39534314,
+        "source_sha256": "4f6cc76f656d5666941852196e35fb5f060bcbb8abebb0b70fe17c3802428a0c"
+      },
+      {
+        "gpt2_tokens_including_eot": 65833203,
+        "name": "childes.train.txt",
+        "rows": 5638783,
+        "source_bytes": 152297628,
+        "source_sha256": "d6c0e39e2c283bfa5489cde80031a4fb9237ca8065a8301580df10e3b6843a98"
+      },
+      {
+        "gpt2_tokens_including_eot": 34856107,
+        "name": "gutenberg.train.txt",
+        "rows": 661928,
+        "source_bytes": 141116557,
+        "source_sha256": "ee404a84c2f42e0cd52bdaa0366cf398328be1b038ede33d07851f69ea1c2837"
+      },
+      {
+        "gpt2_tokens_including_eot": 35542006,
+        "name": "open_subtitles.train.txt",
+        "rows": 3824550,
+        "source_bytes": 121187495,
+        "source_sha256": "9aa48a9448ce6450238868537e4aab43065cca5dae94c948a189e5b802911929"
+      },
+      {
+        "gpt2_tokens_including_eot": 21496833,
+        "name": "simple_wiki.train.txt",
+        "rows": 642735,
+        "source_bytes": 87947184,
+        "source_sha256": "b7cd8fd945d3986c673bf92fa28df44bf8e4ea655c37c2cacd97cdd8a9146cf2"
+      },
+      {
+        "gpt2_tokens_including_eot": 417496,
+        "name": "switchboard.train.txt",
+        "rows": 30559,
+        "source_bytes": 1219017,
+        "source_sha256": "2cb1ed1b47300893b29254081830899c80ac174278b1c1abcade2887821265b1"
+      }
+    ],
+    "train_tokens": {
+      "bytes": 337023238,
+      "dtype": "uint16",
+      "path": "corpus/train_tokens.uint16.bin",
+      "sha256": "fda5922045ee94e66369dec4b3822008f90a143b668ee6a0ff69a174d0dba6d2",
+      "shape": [
+        168511619
+      ]
+    },
+    "training": {
+      "checkpoint_exposures": [
+        {
+          "official_exposure_millions": 1,
+          "optimizer_step": 103,
+          "record_threshold": 823
+        },
+        {
+          "official_exposure_millions": 2,
+          "optimizer_step": 206,
+          "record_threshold": 1646
+        },
+        {
+          "official_exposure_millions": 3,
+          "optimizer_step": 309,
+          "record_threshold": 2469
+        },
+        {
+          "official_exposure_millions": 4,
+          "optimizer_step": 412,
+          "record_threshold": 3292
+        },
+        {
+          "official_exposure_millions": 5,
+          "optimizer_step": 515,
+          "record_threshold": 4115
+        },
+        {
+          "official_exposure_millions": 6,
+          "optimizer_step": 618,
+          "record_threshold": 4937
+        },
+        {
+          "official_exposure_millions": 7,
+          "optimizer_step": 720,
+          "record_threshold": 5760
+        },
+        {
+          "official_exposure_millions": 8,
+          "optimizer_step": 823,
+          "record_threshold": 6583
+        },
+        {
+          "official_exposure_millions": 9,
+          "optimizer_step": 926,
+          "record_threshold": 7406
+        },
+        {
+          "official_exposure_millions": 10,
+          "optimizer_step": 1029,
+          "record_threshold": 8229
+        },
+        {
+          "official_exposure_millions": 20,
+          "optimizer_step": 2058,
+          "record_threshold": 16457
+        },
+        {
+          "official_exposure_millions": 30,
+          "optimizer_step": 3086,
+          "record_threshold": 24685
+        },
+        {
+          "official_exposure_millions": 40,
+          "optimizer_step": 4115,
+          "record_threshold": 32913
+        },
+        {
+          "official_exposure_millions": 50,
+          "optimizer_step": 5143,
+          "record_threshold": 41141
+        },
+        {
+          "official_exposure_millions": 60,
+          "optimizer_step": 6172,
+          "record_threshold": 49369
+        },
+        {
+          "official_exposure_millions": 70,
+          "optimizer_step": 7200,
+          "record_threshold": 57597
+        },
+        {
+          "official_exposure_millions": 80,
+          "optimizer_step": 8229,
+          "record_threshold": 65825
+        },
+        {
+          "official_exposure_millions": 90,
+          "optimizer_step": 9257,
+          "record_threshold": 74053
+        },
+        {
+          "official_exposure_millions": 100,
+          "optimizer_step": 10286,
+          "record_threshold": 82281
+        },
+        {
+          "official_exposure_millions": 200,
+          "optimizer_step": 20571,
+          "record_threshold": 164562
+        },
+        {
+          "official_exposure_millions": 300,
+          "optimizer_step": 30856,
+          "record_threshold": 246843
+        },
+        {
+          "official_exposure_millions": 400,
+          "optimizer_step": 41141,
+          "record_threshold": 329124
+        },
+        {
+          "official_exposure_millions": 500,
+          "optimizer_step": 51426,
+          "record_threshold": 411405
+        },
+        {
+          "official_exposure_millions": 600,
+          "optimizer_step": 61711,
+          "record_threshold": 493686
+        },
+        {
+          "official_exposure_millions": 700,
+          "optimizer_step": 71996,
+          "record_threshold": 575967
+        },
+        {
+          "official_exposure_millions": 800,
+          "optimizer_step": 82281,
+          "record_threshold": 658248
+        },
+        {
+          "official_exposure_millions": 900,
+          "optimizer_step": 92567,
+          "record_threshold": 740529
+        },
+        {
+          "official_exposure_millions": 1000,
+          "optimizer_step": 102852,
+          "record_threshold": 822810
+        }
+      ],
+      "complete_records_per_epoch": 82281,
+      "epochs": 10,
+      "optimizer_batch_records": 8,
+      "optimizer_steps": 102852,
+      "records": 822810,
+      "sequence_length": 2048,
+      "starts": {
+        "bytes": 6582608,
+        "dtype": "uint64",
+        "path": "corpus/train_starts.uint64.npy",
+        "sha256": "de354d730748db4abf8dac8b923baa6eb2f5d5e7dd494721b1c998ba8b50d329",
+        "shape": [
+          822810
+        ]
+      },
+      "stream_seed": 20260818,
+      "target_token_presentations": 1685114880,
+      "warmup_steps": 2572
+    }
+  },
+  "evaluation": {
+    "dataset": "BabyLM-community/BabyLM-2026-Strict-Evals",
+    "evaluator": "babylm-org/babylm-eval",
+    "evaluator_revision": "6f825c291e2c4c78ad33b1935fd64d45f52642dc",
+    "full_ewok": "unavailable_gated",
+    "official_data_root": "evaluation/official",
+    "packed_data_root": "evaluation/packed",
+    "paloma": "not_in_protocol",
+    "revision": "8d52da9424a9ff30b9e8266c4f751aba9c504233"
+  },
+  "format": "babylm2026_strict_gpt2_causal_t2048_10epoch_v1",
+  "protocol_id": "babylm2026-strict-gpt2-causal-t2048-10epoch-v1",
+  "provenance": {
+    "derivation": "full official corpus, ten deterministic epochs",
+    "legacy_packed_archive_sha256": "aa796cbeb149051272d9c37ed9e496dd1b9f4d5bb421613bd6f715b774012a1e",
+    "legacy_packed_manifest_sha256": "08bf2d70c2f6c318f0ecedd661504b621bce4de329daec4ca075443c47a22bdf"
+  },
+  "schema_version": 1,
+  "tokenizer": {
+    "encoding": "gpt2",
+    "eot_token": 50256,
+    "implementation": "tiktoken",
+    "vocab_size": 50257
+  }
+}

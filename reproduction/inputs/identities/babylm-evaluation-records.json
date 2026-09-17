@@ -1,0 +1,1296 @@
+{
+  "finetune": {
+    "official_hyperparameters": {
+      "best_validation_checkpoint": true,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "classifier_dropout": 0.1,
+      "classifier_layer_norm_epsilon": 1e-05,
+      "epsilon": 1e-08,
+      "learning_rate": 3e-05,
+      "minimum_learning_rate_factor": 0.1,
+      "optimizer": "AdamW",
+      "seed": 42,
+      "warmup_proportion": 0.06,
+      "weight_decay": 0.01
+    },
+    "padding_equivalence": "Sequences are right padded and the last non-pad hidden state is selected. Causality makes this representation independent of future padding while avoiding left-pad state contamination.",
+    "source_files": [
+      {
+        "bytes": 6541468,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/boolq.train.jsonl",
+        "sha256": "237efed024a1c944ebd192fd15c360e8bf0cfd3c5d353582178fc53c10333d99"
+      },
+      {
+        "bytes": 1132714,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/boolq.valid.jsonl",
+        "sha256": "09491f5c02730c400e230ee013c2e60a5726ff4e7255f5d8e547c756dc907f81"
+      },
+      {
+        "bytes": 2295803,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/mnli.train.jsonl",
+        "sha256": "f21924ced5ebe1fb6abcac27556acd8eaa4c2f69add471c2ded8ee3f5d02852b"
+      },
+      {
+        "bytes": 1110523,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/mnli.valid.jsonl",
+        "sha256": "3ae64cf09c41b7a84b12b500937cdbb3f74cb1b8fc9dd87a3bfe2f0243b87a68"
+      },
+      {
+        "bytes": 1092476,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/mrpc.train.jsonl",
+        "sha256": "4c6d10e778301c9a709a68d27317819564f039ddbf36f7f50ce0edf3a48b520f"
+      },
+      {
+        "bytes": 60957,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/mrpc.valid.jsonl",
+        "sha256": "0095cde73fe911541032c2120830a44e145328b813302dcd41e2a498ba2f4082"
+      },
+      {
+        "bytes": 48751935,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/multirc.train.jsonl",
+        "sha256": "409a911f2f5f671877be60aa2700c26eda2594e6d0d2ec81b77e6070b13d2e64"
+      },
+      {
+        "bytes": 4096348,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/multirc.valid.jsonl",
+        "sha256": "4bd20d922cbc1862994c30e15932c61f7fc26d974ef8b12f72668ca3d8c0af7d"
+      },
+      {
+        "bytes": 1823696,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/qqp.train.jsonl",
+        "sha256": "3a79b5ac272ce165d4182f4d61f6de54e26bc5d9f6ac02673a5a6611e9dc6c33"
+      },
+      {
+        "bytes": 3660622,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/qqp.valid.jsonl",
+        "sha256": "d54fb89a26e473631816eda0cc5b5da68f2e9b27338e3eed6d19c590460f6a2b"
+      },
+      {
+        "bytes": 947972,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/rte.train.jsonl",
+        "sha256": "7777c04bc210d7f62b8a3222f35593c9f7bc9505d604f1908023586e5951be1d"
+      },
+      {
+        "bytes": 50881,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/rte.valid.jsonl",
+        "sha256": "fb6265d78821ff5e13e67a9b8b9f8f74b87f750a38e789f22b1aa8c85835694f"
+      },
+      {
+        "bytes": 132379,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/wsc.train.jsonl",
+        "sha256": "90f8c3d71dcc9837d3f7dbcd42e652875fba7006aa6724cb9acb5a920b4c047a"
+      },
+      {
+        "bytes": 14653,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/wsc.valid.jsonl",
+        "sha256": "cff18ef1631d5f93076f6d89b6922924e33de3cc754d2835b6a3367fd0fb6020"
+      }
+    ],
+    "tasks": {
+      "boolq": {
+        "batch_size": 16,
+        "epochs": 10,
+        "examples": {
+          "train": 9427,
+          "valid": 1635
+        },
+        "num_labels": 2,
+        "records": {
+          "train": {
+            "labels": {
+              "bytes": 9555,
+              "dtype": "uint8",
+              "path": "finetune/boolq/train_labels.npy",
+              "sha256": "a0137b2adb92fcc07f5c5a58a250b1f717120c8edd79a319635022998ed0adcf",
+              "shape": [
+                9427
+              ]
+            },
+            "offsets": {
+              "bytes": 75552,
+              "dtype": "uint64",
+              "path": "finetune/boolq/train_offsets.npy",
+              "sha256": "59e95a87102c8e2c67720c2d34997ecc770c88e0d660d6921e6a7421a1bc1c97",
+              "shape": [
+                9428
+              ]
+            },
+            "tokens": {
+              "bytes": 2559474,
+              "dtype": "uint16",
+              "path": "finetune/boolq/train_tokens.bin",
+              "sha256": "d3fdde79fa445bd5a4115cadd712e95051b67386c3b22f27fba344bd09721cae",
+              "shape": [
+                1279737
+              ]
+            }
+          },
+          "train_order": {
+            "bytes": 377208,
+            "dtype": "uint32",
+            "path": "finetune/boolq/train_order.npy",
+            "sha256": "601533151baf7ef2aca8a358bda01355e1b7c946749e7ff20f27802112642314",
+            "shape": [
+              94270
+            ]
+          },
+          "valid": {
+            "labels": {
+              "bytes": 1763,
+              "dtype": "uint8",
+              "path": "finetune/boolq/valid_labels.npy",
+              "sha256": "7dc15f9af52cce3c6ce1370685719be541de40fab425cc56c3cce3b2fb08ad8d",
+              "shape": [
+                1635
+              ]
+            },
+            "offsets": {
+              "bytes": 13216,
+              "dtype": "uint64",
+              "path": "finetune/boolq/valid_offsets.npy",
+              "sha256": "1dbce2d27b7cc57a89ffec4e181f1379f0dd46038879a91470ebc3097fbdb718",
+              "shape": [
+                1636
+              ]
+            },
+            "tokens": {
+              "bytes": 443384,
+              "dtype": "uint16",
+              "path": "finetune/boolq/valid_tokens.bin",
+              "sha256": "2226bff68f6ee68127627f10d87606ddc2e7ca4264020ef13c9986f7016d33e7",
+              "shape": [
+                221692
+              ]
+            }
+          }
+        },
+        "selection_metric": "accuracy",
+        "sequence_length": 512
+      },
+      "mnli": {
+        "batch_size": 32,
+        "epochs": 10,
+        "examples": {
+          "train": 10000,
+          "valid": 4908
+        },
+        "num_labels": 3,
+        "records": {
+          "train": {
+            "labels": {
+              "bytes": 10128,
+              "dtype": "uint8",
+              "path": "finetune/mnli/train_labels.npy",
+              "sha256": "adda8d71127cc35a8aab2e8e29a75d10b49248f97c2dc2b4c34693fda5ba5ebc",
+              "shape": [
+                10000
+              ]
+            },
+            "offsets": {
+              "bytes": 80136,
+              "dtype": "uint64",
+              "path": "finetune/mnli/train_offsets.npy",
+              "sha256": "3be6edfc0ad8b1ba324682060b3f8cda5dafca9ff38ddc58136f89a03280f950",
+              "shape": [
+                10001
+              ]
+            },
+            "tokens": {
+              "bytes": 729514,
+              "dtype": "uint16",
+              "path": "finetune/mnli/train_tokens.bin",
+              "sha256": "822407e0054996b013552860a3dd4a1acc040a59c084004c9e3801900ea7b657",
+              "shape": [
+                364757
+              ]
+            }
+          },
+          "train_order": {
+            "bytes": 400128,
+            "dtype": "uint32",
+            "path": "finetune/mnli/train_order.npy",
+            "sha256": "495db79cd438040d6facfb8248bdd0a758d35e5807c1e31a17a6677ea5c742cd",
+            "shape": [
+              100000
+            ]
+          },
+          "valid": {
+            "labels": {
+              "bytes": 5036,
+              "dtype": "uint8",
+              "path": "finetune/mnli/valid_labels.npy",
+              "sha256": "97f933171e30451100c32a460d35e158122b6fcb422bfc7093b6e89362f5a537",
+              "shape": [
+                4908
+              ]
+            },
+            "offsets": {
+              "bytes": 39400,
+              "dtype": "uint64",
+              "path": "finetune/mnli/valid_offsets.npy",
+              "sha256": "90f23bb53a23e9a9d787f7cd24b4fa6efb99cc5faf8899a67aa1a155c42ed167",
+              "shape": [
+                4909
+              ]
+            },
+            "tokens": {
+              "bytes": 353592,
+              "dtype": "uint16",
+              "path": "finetune/mnli/valid_tokens.bin",
+              "sha256": "f12e01c691d71794fc7eecaa211bb7381903abbba7d776d54fef54f9223c0677",
+              "shape": [
+                176796
+              ]
+            }
+          }
+        },
+        "selection_metric": "accuracy",
+        "sequence_length": 512
+      },
+      "mrpc": {
+        "batch_size": 32,
+        "epochs": 10,
+        "examples": {
+          "train": 3668,
+          "valid": 204
+        },
+        "num_labels": 2,
+        "records": {
+          "train": {
+            "labels": {
+              "bytes": 3796,
+              "dtype": "uint8",
+              "path": "finetune/mrpc/train_labels.npy",
+              "sha256": "ca53816e436797119611e2e8f88c2d9ebdea6dc550db8a422af77877f15cbad7",
+              "shape": [
+                3668
+              ]
+            },
+            "offsets": {
+              "bytes": 29480,
+              "dtype": "uint64",
+              "path": "finetune/mrpc/train_offsets.npy",
+              "sha256": "5f690e1ae71f4764396e2285e5fb8e18cb19d8869924b7580029db0e30f4906d",
+              "shape": [
+                3669
+              ]
+            },
+            "tokens": {
+              "bytes": 367390,
+              "dtype": "uint16",
+              "path": "finetune/mrpc/train_tokens.bin",
+              "sha256": "1e472419619a1d4b0be0283792e3df7542f15e2341cbd8a6964c7c9bb467674b",
+              "shape": [
+                183695
+              ]
+            }
+          },
+          "train_order": {
+            "bytes": 146848,
+            "dtype": "uint32",
+            "path": "finetune/mrpc/train_order.npy",
+            "sha256": "c72e7267589c211a1676713593e9b9bb9d22e1265b2478264d177b5ddad75bb8",
+            "shape": [
+              36680
+            ]
+          },
+          "valid": {
+            "labels": {
+              "bytes": 332,
+              "dtype": "uint8",
+              "path": "finetune/mrpc/valid_labels.npy",
+              "sha256": "28c16ba4aa41884ea19780f9a39f4883d1e78ed0a96b00956339e30680c844d6",
+              "shape": [
+                204
+              ]
+            },
+            "offsets": {
+              "bytes": 1768,
+              "dtype": "uint64",
+              "path": "finetune/mrpc/valid_offsets.npy",
+              "sha256": "16ea5b50896f0a40c26ef39cc2b9745b51ed71afffbf64d9161f24fecf462fcb",
+              "shape": [
+                205
+              ]
+            },
+            "tokens": {
+              "bytes": 20336,
+              "dtype": "uint16",
+              "path": "finetune/mrpc/valid_tokens.bin",
+              "sha256": "42e647bd9bedd932ddd4b18b1a512202d22a5f5398db53a425345b9dde0fd3bf",
+              "shape": [
+                10168
+              ]
+            }
+          }
+        },
+        "selection_metric": "f1",
+        "sequence_length": 512
+      },
+      "multirc": {
+        "batch_size": 16,
+        "epochs": 10,
+        "examples": {
+          "train": 27243,
+          "valid": 2424
+        },
+        "num_labels": 2,
+        "records": {
+          "train": {
+            "labels": {
+              "bytes": 27371,
+              "dtype": "uint8",
+              "path": "finetune/multirc/train_labels.npy",
+              "sha256": "f51ae7fb7c826c6634796f9b53c4c6bffad599df8bb4a1bf1ab0d5129e6eec55",
+              "shape": [
+                27243
+              ]
+            },
+            "offsets": {
+              "bytes": 218080,
+              "dtype": "uint64",
+              "path": "finetune/multirc/train_offsets.npy",
+              "sha256": "1051bb1880d221acf78dc2fce3b81d7166721655b291545f67597ed915f05830",
+              "shape": [
+                27244
+              ]
+            },
+            "tokens": {
+              "bytes": 19085604,
+              "dtype": "uint16",
+              "path": "finetune/multirc/train_tokens.bin",
+              "sha256": "ddb709ba0510d7b233593d9eb7df20da6b1db412984a2b5207b495cc9a173cae",
+              "shape": [
+                9542802
+              ]
+            }
+          },
+          "train_order": {
+            "bytes": 1089848,
+            "dtype": "uint32",
+            "path": "finetune/multirc/train_order.npy",
+            "sha256": "28d25c1e5cf445a6bf95d5c76318e198c06992023650035c09c83505a2247290",
+            "shape": [
+              272430
+            ]
+          },
+          "valid": {
+            "labels": {
+              "bytes": 2552,
+              "dtype": "uint8",
+              "path": "finetune/multirc/valid_labels.npy",
+              "sha256": "1856fdb70b119495867a97a1f375e3f091b297ec2d86bb56a34da5c3b448ffc1",
+              "shape": [
+                2424
+              ]
+            },
+            "offsets": {
+              "bytes": 19528,
+              "dtype": "uint64",
+              "path": "finetune/multirc/valid_offsets.npy",
+              "sha256": "effa1de306585f423e90297db07a71d4bf0b2922358f0e7573a4e6bcfdc8ecab",
+              "shape": [
+                2425
+              ]
+            },
+            "tokens": {
+              "bytes": 1632484,
+              "dtype": "uint16",
+              "path": "finetune/multirc/valid_tokens.bin",
+              "sha256": "518ac448c854bb70fa9cf73652b59bd1b21c682fafe87b28f2c99c2550ed27d2",
+              "shape": [
+                816242
+              ]
+            }
+          }
+        },
+        "selection_metric": "accuracy",
+        "sequence_length": 512
+      },
+      "qqp": {
+        "batch_size": 32,
+        "epochs": 10,
+        "examples": {
+          "train": 10000,
+          "valid": 20215
+        },
+        "num_labels": 2,
+        "records": {
+          "train": {
+            "labels": {
+              "bytes": 10128,
+              "dtype": "uint8",
+              "path": "finetune/qqp/train_labels.npy",
+              "sha256": "f1340ebdc9b4027278d1f4ec403b7a5d7c6d8531b0d9d1fdb00a0b07b04b0f59",
+              "shape": [
+                10000
+              ]
+            },
+            "offsets": {
+              "bytes": 80136,
+              "dtype": "uint64",
+              "path": "finetune/qqp/train_offsets.npy",
+              "sha256": "c62aa070de94faa504a174d498aca7ee8ce48e367800e76e4ed004ae9c3eb812",
+              "shape": [
+                10001
+              ]
+            },
+            "tokens": {
+              "bytes": 542700,
+              "dtype": "uint16",
+              "path": "finetune/qqp/train_tokens.bin",
+              "sha256": "9e393a6ec23976dd6d24766a65af4902a7d86b9289cb5d777d5bfe7c06c01c9a",
+              "shape": [
+                271350
+              ]
+            }
+          },
+          "train_order": {
+            "bytes": 400128,
+            "dtype": "uint32",
+            "path": "finetune/qqp/train_order.npy",
+            "sha256": "ba3a5f8912553d2d7c41ad5531db0f8741969c0784d3d4ae5300da0427e7e4e3",
+            "shape": [
+              100000
+            ]
+          },
+          "valid": {
+            "labels": {
+              "bytes": 20343,
+              "dtype": "uint8",
+              "path": "finetune/qqp/valid_labels.npy",
+              "sha256": "1b90b185b232bcfb722dd50f2b66f05003a0a2f04a84632b9c603cbf8d3ddc37",
+              "shape": [
+                20215
+              ]
+            },
+            "offsets": {
+              "bytes": 161856,
+              "dtype": "uint64",
+              "path": "finetune/qqp/valid_offsets.npy",
+              "sha256": "7f71a4519063e16196aff8995d73a9c135cd52806017d7f800491a7a7c435fdd",
+              "shape": [
+                20216
+              ]
+            },
+            "tokens": {
+              "bytes": 1094034,
+              "dtype": "uint16",
+              "path": "finetune/qqp/valid_tokens.bin",
+              "sha256": "dac26c68ff22e982fea201bda0c91417da18f3fce768035503ac397dbb2bfcda",
+              "shape": [
+                547017
+              ]
+            }
+          }
+        },
+        "selection_metric": "f1",
+        "sequence_length": 512
+      },
+      "rte": {
+        "batch_size": 32,
+        "epochs": 10,
+        "examples": {
+          "train": 2490,
+          "valid": 139
+        },
+        "num_labels": 2,
+        "records": {
+          "train": {
+            "labels": {
+              "bytes": 2618,
+              "dtype": "uint8",
+              "path": "finetune/rte/train_labels.npy",
+              "sha256": "659bd5cfa6661491ff6c31a6d48ffe81d1840b5e3ee5f9252260ca21fad6af71",
+              "shape": [
+                2490
+              ]
+            },
+            "offsets": {
+              "bytes": 20056,
+              "dtype": "uint64",
+              "path": "finetune/rte/train_offsets.npy",
+              "sha256": "453c479ce5a3df7ddcf657099f064ce51a751a91f7d1493f8231866ae89b5c4b",
+              "shape": [
+                2491
+              ]
+            },
+            "tokens": {
+              "bytes": 334722,
+              "dtype": "uint16",
+              "path": "finetune/rte/train_tokens.bin",
+              "sha256": "6ed2985c263211d73b19525c83005e3fc9c60eebb6d29ee0fa27ca41fcc9f89e",
+              "shape": [
+                167361
+              ]
+            }
+          },
+          "train_order": {
+            "bytes": 99728,
+            "dtype": "uint32",
+            "path": "finetune/rte/train_order.npy",
+            "sha256": "98c185414430dd79a3d842a29f55a3802f777cc56cd3ae8a7636d698ab38221c",
+            "shape": [
+              24900
+            ]
+          },
+          "valid": {
+            "labels": {
+              "bytes": 267,
+              "dtype": "uint8",
+              "path": "finetune/rte/valid_labels.npy",
+              "sha256": "46bde99c1a55f0e4993fcfd637cdb24e6d65075ba9285b2e9bb894e5a240e431",
+              "shape": [
+                139
+              ]
+            },
+            "offsets": {
+              "bytes": 1248,
+              "dtype": "uint64",
+              "path": "finetune/rte/valid_offsets.npy",
+              "sha256": "cb4facde20cf2126377e5fea8d399bb536c035cca41653d066712810c840c440",
+              "shape": [
+                140
+              ]
+            },
+            "tokens": {
+              "bytes": 18124,
+              "dtype": "uint16",
+              "path": "finetune/rte/valid_tokens.bin",
+              "sha256": "30413eeaac37402dad05afc4ea098c8a2e37d62abd4cb2b06372a887edda7784",
+              "shape": [
+                9062
+              ]
+            }
+          }
+        },
+        "selection_metric": "accuracy",
+        "sequence_length": 512
+      },
+      "wsc": {
+        "batch_size": 32,
+        "epochs": 30,
+        "examples": {
+          "train": 554,
+          "valid": 52
+        },
+        "num_labels": 2,
+        "records": {
+          "train": {
+            "labels": {
+              "bytes": 682,
+              "dtype": "uint8",
+              "path": "finetune/wsc/train_labels.npy",
+              "sha256": "2667bc81796825f8951be4e194699777251617ff48aeeaad39bb90d05bdffc52",
+              "shape": [
+                554
+              ]
+            },
+            "offsets": {
+              "bytes": 4568,
+              "dtype": "uint64",
+              "path": "finetune/wsc/train_offsets.npy",
+              "sha256": "5ad77299d360fe4b3caaca26483b32d73d80cc2332b4aeb5a271656e4e78de5f",
+              "shape": [
+                555
+              ]
+            },
+            "tokens": {
+              "bytes": 45410,
+              "dtype": "uint16",
+              "path": "finetune/wsc/train_tokens.bin",
+              "sha256": "cd67d23c13e71cace500ee8d3a18d6f49829d467563e831d655c39c1211a267c",
+              "shape": [
+                22705
+              ]
+            }
+          },
+          "train_order": {
+            "bytes": 66608,
+            "dtype": "uint32",
+            "path": "finetune/wsc/train_order.npy",
+            "sha256": "63a6893a3a6b27134a69e93a182ce0ea3139bfdf2646b5fadbe5129e82e136a5",
+            "shape": [
+              16620
+            ]
+          },
+          "valid": {
+            "labels": {
+              "bytes": 180,
+              "dtype": "uint8",
+              "path": "finetune/wsc/valid_labels.npy",
+              "sha256": "7db919641395b692ca9c289be856f01a996a193c49e30795b1837213d9daf9d9",
+              "shape": [
+                52
+              ]
+            },
+            "offsets": {
+              "bytes": 552,
+              "dtype": "uint64",
+              "path": "finetune/wsc/valid_offsets.npy",
+              "sha256": "5ea8417b40cc8ceb798ba07036190618b29b3d1533adb16ba71df51a3ff8b0d1",
+              "shape": [
+                53
+              ]
+            },
+            "tokens": {
+              "bytes": 5182,
+              "dtype": "uint16",
+              "path": "finetune/wsc/valid_tokens.bin",
+              "sha256": "aa8fbca07c62882b39baeec964e75b2b0826c88176f7f414003becd44cb2b95d",
+              "shape": [
+                2591
+              ]
+            }
+          }
+        },
+        "selection_metric": "accuracy",
+        "sequence_length": 512
+      }
+    }
+  },
+  "tokenizer": {
+    "encoding": "gpt2",
+    "eot_token": 50256,
+    "implementation": "tiktoken",
+    "vocab_size": 50257
+  },
+  "zero_shot": {
+    "candidates": 348954,
+    "examples": 164204,
+    "examples_by_task": {
+      "blimp": 59875,
+      "blimp_supplement": 5218,
+      "comps": 91028,
+      "entity_tracking": 6780,
+      "ewok_fast": 1100,
+      "global_piqa_nonparallel": 100,
+      "global_piqa_parallel": 103
+    },
+    "gpt2_tokens": 8725665,
+    "official_scoring": {
+      "continuation_sum": [
+        "comps",
+        "entity_tracking",
+        "ewok_fast"
+      ],
+      "length_normalized_continuation_sum": [
+        "global_piqa_parallel",
+        "global_piqa_nonparallel"
+      ],
+      "note": "The official harness uses a random tie break. Exact floating ties are recorded and deterministically choose the lowest index so matched arms are reproducible.",
+      "tie_break": "lowest candidate index",
+      "whole_sentence_sum": [
+        "blimp",
+        "blimp_supplement"
+      ]
+    },
+    "records": {
+      "candidate_offsets": {
+        "bytes": 2791768,
+        "dtype": "uint64",
+        "path": "zero_shot/candidate_offsets.npy",
+        "sha256": "294284c86bfb0bd62e78c6a4256b2dc5f3842c0a3fea2d237bd7f84b2f832037",
+        "shape": [
+          348955
+        ]
+      },
+      "example_offsets": {
+        "bytes": 656948,
+        "dtype": "uint32",
+        "path": "zero_shot/example_offsets.npy",
+        "sha256": "cbf8cc419286cd0b9a4e23449de70a03ce20fbd876386e6c896cb69c3b7c2e66",
+        "shape": [
+          164205
+        ]
+      },
+      "labels": {
+        "bytes": 164332,
+        "dtype": "uint8",
+        "path": "zero_shot/labels.npy",
+        "sha256": "ab05c9bc4f29be771767769c214b8f6adc67360a031e70d615d4cf489ead7d6b",
+        "shape": [
+          164204
+        ]
+      },
+      "length_normalized": {
+        "bytes": 164332,
+        "dtype": "uint8",
+        "path": "zero_shot/length_normalized.npy",
+        "sha256": "0a518a0ce4a060e00defdd120f115d97a94fecd2e35e9e8903495fbeb63bf883",
+        "shape": [
+          164204
+        ]
+      },
+      "score_starts": {
+        "bytes": 1395944,
+        "dtype": "uint32",
+        "path": "zero_shot/score_starts.npy",
+        "sha256": "6fb01bfaf46504a3720eeba0869fc820f90ae812bbe938e5d1fb9f5e4248d857",
+        "shape": [
+          348954
+        ]
+      },
+      "subdomain_ids": {
+        "bytes": 328536,
+        "dtype": "uint16",
+        "path": "zero_shot/subdomain_ids.npy",
+        "sha256": "0805b52d6507ca0cbaacaf37dc554366b210d85b8600d63250ea4df6e3796737",
+        "shape": [
+          164204
+        ]
+      },
+      "task_ids": {
+        "bytes": 164332,
+        "dtype": "uint8",
+        "path": "zero_shot/task_ids.npy",
+        "sha256": "7ff58cdbad57a228f1031f29fdf85471c27d0b4a63b425bfa0ad84bc3bd6da89",
+        "shape": [
+          164204
+        ]
+      },
+      "tokens": {
+        "bytes": 17451330,
+        "dtype": "uint16",
+        "path": "zero_shot/tokens.bin",
+        "sha256": "642dd1be696d59cae5fff6ef701707b70382542ab6cc93cded49b5d3eba2d761",
+        "shape": [
+          8725665
+        ]
+      }
+    },
+    "source_files": [
+      {
+        "bytes": 332234,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/adjunct_island.jsonl",
+        "sha256": "0b4f2feeeac8c8c26908fdc7847883bccc0d5c71c423fcc59526c6996d7fb48a"
+      },
+      {
+        "bytes": 314039,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/anaphor_gender_agreement.jsonl",
+        "sha256": "726e5d5b163c26ef6c9e2d2ec4fff6c7c19d48ef089fb4d84429a38fa3aadee0"
+      },
+      {
+        "bytes": 308093,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/anaphor_number_agreement.jsonl",
+        "sha256": "9a096c82dba58f62434816d9b77317e458dfaa43276470ffe566df94bf625bc3"
+      },
+      {
+        "bytes": 301139,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/animate_subject_passive.jsonl",
+        "sha256": "a0f46ddc0bd9b03ac9110c4f78027aca5240ff21b5f58ccd6ad6726ac2979ca6"
+      },
+      {
+        "bytes": 295426,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/animate_subject_trans.jsonl",
+        "sha256": "5adad562f2ebd40035e1224741ed6bedda39e250961a0bc883fcb86748db4235"
+      },
+      {
+        "bytes": 257879,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/causative.jsonl",
+        "sha256": "ff1f0c8e87722d60ae890841ec2becb5a7690f3b33d24ac1281e5330ee5b49a1"
+      },
+      {
+        "bytes": 329894,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/complex_NP_island.jsonl",
+        "sha256": "d0e8ba538e57bad749fe9d443c2831d90e83af00921d517795d99ef5057db9e1"
+      },
+      {
+        "bytes": 364247,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/coordinate_structure_constraint_complex_left_branch.jsonl",
+        "sha256": "b35d04c62d979074faf20a79a7f2a1a941aa4e36e3be0deac7761673256a4d1c"
+      },
+      {
+        "bytes": 346278,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/coordinate_structure_constraint_object_extraction.jsonl",
+        "sha256": "eee09da7f82cd5ee5ac41162d6c22b250a846b59f46f4c441ec62e2bf5a026e1"
+      },
+      {
+        "bytes": 322752,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/determiner_noun_agreement_1.jsonl",
+        "sha256": "03d9aa691d4b73cd88e11cc29ce1ffc5bdd7193c51c54be8528d0ca769129eda"
+      },
+      {
+        "bytes": 323380,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/determiner_noun_agreement_2.jsonl",
+        "sha256": "252963d44176313bb6e8e7de8731262a7d6bfe99456d56c4cbb2a70673027704"
+      },
+      {
+        "bytes": 241136,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/determiner_noun_agreement_irregular_1.jsonl",
+        "sha256": "8c085e9b9b896f51c68c5d55ab96e6104ae6370e643c4a9b6c5d741c245708c0"
+      },
+      {
+        "bytes": 288838,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/determiner_noun_agreement_irregular_2.jsonl",
+        "sha256": "ff26de5c3ee9d833ea5aff76810667b03d3cf789784c946a00057563af1acddd"
+      },
+      {
+        "bytes": 349230,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/determiner_noun_agreement_with_adj_2.jsonl",
+        "sha256": "2c18fa13d093ab036866b5ecb04571c4b618bcbbf6d46d9d9ce4fea435e9d295"
+      },
+      {
+        "bytes": 270182,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/determiner_noun_agreement_with_adj_irregular_1.jsonl",
+        "sha256": "9340a9c445fd698e4db83f4c27c8e9844f3146d7c9e7a824b5ebc88e9a457eca"
+      },
+      {
+        "bytes": 315566,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/determiner_noun_agreement_with_adj_irregular_2.jsonl",
+        "sha256": "93fdeb726e7b3b33186f8ebec15178efdf87a05645e3f241e2414cbc4a3b08d9"
+      },
+      {
+        "bytes": 351374,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/determiner_noun_agreement_with_adjective_1.jsonl",
+        "sha256": "2bd8560d0ae8dadbd007470f0edb144f701634d89f03a17d270008c7778cd625"
+      },
+      {
+        "bytes": 301811,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/distractor_agreement_relational_noun.jsonl",
+        "sha256": "5687edeac9d7441e0adca066c5fa96283a6bff4203aae37780dd5c613ac8672e"
+      },
+      {
+        "bytes": 355792,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/distractor_agreement_relative_clause.jsonl",
+        "sha256": "9834935576750042547b9e83d0dc2738ae905fe921a970c89ff0022eb636b1ae"
+      },
+      {
+        "bytes": 278627,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/drop_argument.jsonl",
+        "sha256": "2796e2e62f7e19726ea846e91ecb53e7232a70b0a5b6ba185f5bc7239028f940"
+      },
+      {
+        "bytes": 328136,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/ellipsis_n_bar_1.jsonl",
+        "sha256": "994ef730be5783bc45dd035ee0d0604e81376b96522bf8409e8090d7958876e7"
+      },
+      {
+        "bytes": 352142,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/ellipsis_n_bar_2.jsonl",
+        "sha256": "08a40b94a61efee289cd225924dd38d74b5d578d9d343b75ab4971010d5715f1"
+      },
+      {
+        "bytes": 338553,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/existential_there_object_raising.jsonl",
+        "sha256": "1a531337e5daf6d1f9788e928bb78a25cb0d1361033550f97178e161726736bb"
+      },
+      {
+        "bytes": 330767,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/existential_there_quantifiers_1.jsonl",
+        "sha256": "7b4aa5d9cb2735e64310cbe623e28ab6e81a9bbda3f65d408bbc95c43815685c"
+      },
+      {
+        "bytes": 325560,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/existential_there_quantifiers_2.jsonl",
+        "sha256": "d4b649fcc13bc5ba390ff91ded0464340c39d0719ebfaa082d237a5f607113ce"
+      },
+      {
+        "bytes": 363249,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/existential_there_subject_raising.jsonl",
+        "sha256": "436236db69b7a6c0ddd0a1820d97d510b2ea2d0bb1415c0744c6fe8d404f04dd"
+      },
+      {
+        "bytes": 326572,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/expletive_it_object_raising.jsonl",
+        "sha256": "c0acde5e83c1b4bd19acd81ef0485daa19f17bf2e2ee2aa4ba538260d8fdf57d"
+      },
+      {
+        "bytes": 254149,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/inchoative.jsonl",
+        "sha256": "f23f2687c33298c75d583e2bed32b2978b2c5b3cb1222d283cd2141e0e19e2a0"
+      },
+      {
+        "bytes": 263661,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/intransitive.jsonl",
+        "sha256": "cd57ea044ee3226eda0e6649ae51ecc0ff01621c05745a1782ac1f5b9bb41ef1"
+      },
+      {
+        "bytes": 323700,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/irregular_past_participle_adjectives.jsonl",
+        "sha256": "346545feb4d37d48552ffc5366584d55723cdd609fd9c350995ec511ccaeea6a"
+      },
+      {
+        "bytes": 299142,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/irregular_past_participle_verbs.jsonl",
+        "sha256": "177d48c02d91edcec179bad119a20e474c724ddd3b8a78eeb29a90e23f00a893"
+      },
+      {
+        "bytes": 287531,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/irregular_plural_subject_verb_agreement_1.jsonl",
+        "sha256": "8a8e3ffc578452de40c05e96ba76cde5b950d4b003d8980f6c17d301a8ed58b5"
+      },
+      {
+        "bytes": 308646,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/irregular_plural_subject_verb_agreement_2.jsonl",
+        "sha256": "6d157c760a8be53f7a02d7464687ee10b8985afcf1f3f51c4431523dea2a844d"
+      },
+      {
+        "bytes": 321078,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/left_branch_island_echo_question.jsonl",
+        "sha256": "cfa75f6584f4ef9af72feea3f6e7d624adffa9c554745bd0ba8c96c7f2476835"
+      },
+      {
+        "bytes": 325464,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/left_branch_island_simple_question.jsonl",
+        "sha256": "60df4320859a807c69e7320853e5d439ba6cf1c3dceae489b8cced11cba09ee2"
+      },
+      {
+        "bytes": 320107,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/matrix_question_npi_licensor_present.jsonl",
+        "sha256": "47a7fd49341a32993b762a4daa55f1694deb84184378e22f5e02ba08df400246"
+      },
+      {
+        "bytes": 300790,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/npi_present_1.jsonl",
+        "sha256": "0150e6e51d48bde7520cb047682999af4f958eae41cb3f5ab40c846787bf44bf"
+      },
+      {
+        "bytes": 292145,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/npi_present_2.jsonl",
+        "sha256": "fb358e96486b71605ae686e02324d9ea4c85c9ff3a8e42f065ab7d736a496df4"
+      },
+      {
+        "bytes": 300006,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/only_npi_licensor_present.jsonl",
+        "sha256": "26df99e9824ee6b69e2fd5f4a51ff56bb3f0cd0ccbc9a6f65ba699a271b2e287"
+      },
+      {
+        "bytes": 334323,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/only_npi_scope.jsonl",
+        "sha256": "f2ca338ace8810d109429d6e68ca1c802675af31466de0287ba92143e33b56bc"
+      },
+      {
+        "bytes": 283786,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/passive_1.jsonl",
+        "sha256": "e11fb302e4bfd265711797a361dfe1e9f67f008f5b6b1f331f5cda799272c10f"
+      },
+      {
+        "bytes": 276838,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/passive_2.jsonl",
+        "sha256": "ce094e69c724ae62d60dea98f0e70eb43b76f2b710a4eee9bfe771e4be1f4e60"
+      },
+      {
+        "bytes": 360517,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/principle_A_c_command.jsonl",
+        "sha256": "fd87dc5923d9b7a9746a1f81368cc72461a170f742cd36cba068b0b9e82059ab"
+      },
+      {
+        "bytes": 330445,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/principle_A_case_1.jsonl",
+        "sha256": "999320d075001af21ddcbdcfe37c79f5c2ef7059babbbb74453e1a682d57fb8b"
+      },
+      {
+        "bytes": 331585,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/principle_A_case_2.jsonl",
+        "sha256": "037c6f444228aec72bea04e95205703576f29b6e100ebeaa0312ea23e6f8bfd6"
+      },
+      {
+        "bytes": 332038,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/principle_A_domain_1.jsonl",
+        "sha256": "e5ccd8d666c0ea41db83d49e737bc9955ff9e057b1218ea65bfb8f3d83e15e13"
+      },
+      {
+        "bytes": 327050,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/principle_A_domain_2.jsonl",
+        "sha256": "1aed7bcf1ba75151bcb268ae58cf103244e36061e473301d48670d646352ac80"
+      },
+      {
+        "bytes": 329639,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/principle_A_domain_3.jsonl",
+        "sha256": "c25090413cb33c31193d30e214ca26aca7dd9ddf7c4436b6edac07904ea91721"
+      },
+      {
+        "bytes": 333183,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/principle_A_reconstruction.jsonl",
+        "sha256": "efa433bb7a05e7776b1bffd2829642c92df26c2d76d24f8522246c34439d9cbb"
+      },
+      {
+        "bytes": 312701,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/regular_plural_subject_verb_agreement_1.jsonl",
+        "sha256": "b2a65c1f2a602c4f8081f2aaf58f65a618ab6d665d97330a046f3b5da700327d"
+      },
+      {
+        "bytes": 327225,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/regular_plural_subject_verb_agreement_2.jsonl",
+        "sha256": "5a0da162b326bc38384b5e5bad1fc436782d7eb53863dc7ee4ab13716cef73e6"
+      },
+      {
+        "bytes": 334181,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/sentential_negation_npi_licensor_present.jsonl",
+        "sha256": "4391b597185d481469dbf8c5d80102d1e8a331c577fa6b6e6b4072a781dedfaf"
+      },
+      {
+        "bytes": 367778,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/sentential_negation_npi_scope.jsonl",
+        "sha256": "d1da967b590037f75556798f417e5c4f7f2f219988675be239f931b004134270"
+      },
+      {
+        "bytes": 350518,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/sentential_subject_island.jsonl",
+        "sha256": "311b29f8e221bfb4a277d4668a41f03cfc6bf10cf1672bb9f9ea5703be97ae55"
+      },
+      {
+        "bytes": 345265,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/superlative_quantifiers_1.jsonl",
+        "sha256": "5fc1cd93dd87a66e99d54267bdd93a9d43d60581c080ba4b07f30df16fd09533"
+      },
+      {
+        "bytes": 346793,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/superlative_quantifiers_2.jsonl",
+        "sha256": "5b506244f14a15b76800d4fccff2c69969dd8a78037ba2f2803c0887181a9cb0"
+      },
+      {
+        "bytes": 323608,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/tough_vs_raising_1.jsonl",
+        "sha256": "ffd40653b84443583ca7e99a8d9ffbb521b32f6b3970068448da891080b5932f"
+      },
+      {
+        "bytes": 333235,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/tough_vs_raising_2.jsonl",
+        "sha256": "2e9c8e060ba202f7ab70cf5c2b4814809cfb51492600bdd247d3273f59767925"
+      },
+      {
+        "bytes": 281536,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/transitive.jsonl",
+        "sha256": "aef85a75f505afd0932009bb6383ab93ac1049a16ed0d83c93f464964363cf84"
+      },
+      {
+        "bytes": 321273,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/wh_island.jsonl",
+        "sha256": "cd0039cdcb6a9d25eb2a6cbdf7fe4dd325af0545696143aa38aa77806486898e"
+      },
+      {
+        "bytes": 331438,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/wh_questions_object_gap.jsonl",
+        "sha256": "aef42c33ede354cc981bf26c7b278e5e321fd8b14e9bf909b9bc3e4565a0cc16"
+      },
+      {
+        "bytes": 349411,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/wh_questions_subject_gap.jsonl",
+        "sha256": "71d07f65b18f1d83307796e43273ba795925f847cafe3dc9203e453fc400a07b"
+      },
+      {
+        "bytes": 395660,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/wh_questions_subject_gap_long_distance.jsonl",
+        "sha256": "6a3718d0780aaf4ae3d59a1d2edc134abe531f60f0bc15c84e70651e6117b3d8"
+      },
+      {
+        "bytes": 328968,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/wh_vs_that_no_gap.jsonl",
+        "sha256": "8fab09f7b1759ff1da543d78000fe0df2969bcaf3cd7ae0000b841022884fab7"
+      },
+      {
+        "bytes": 385219,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/wh_vs_that_no_gap_long_distance.jsonl",
+        "sha256": "bbc89b0851030c9d0aa77b60f735982c1cfcb5c6e2e9f670d9db8040148e9aa7"
+      },
+      {
+        "bytes": 337307,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/wh_vs_that_with_gap.jsonl",
+        "sha256": "afb4d60c721b65f7040ae36aa724c889f36c709d8af1e2eadb8a07e13dc721f9"
+      },
+      {
+        "bytes": 386777,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/wh_vs_that_with_gap_long_distance.jsonl",
+        "sha256": "cc2bd762fcb12353fd9f66fcfa196fc894615aeea4bad9cd3dc067d4c76a4614"
+      },
+      {
+        "bytes": 196960,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/hypernym.jsonl",
+        "sha256": "4f8a46b377aa3c84275f3f812b14ed3266d0354aa13be9c94610eb287d17659f"
+      },
+      {
+        "bytes": 12306,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/qa_congruence_easy.jsonl",
+        "sha256": "25c94dc5ef2ad7d8012a9695100e525a424135c94650e0dba1f74dbc10d44887"
+      },
+      {
+        "bytes": 31876,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/qa_congruence_tricky.jsonl",
+        "sha256": "8df41ef003adb0ca43ba6b286cf406925f3f766c5a59b1c9a96e05326c0a2334"
+      },
+      {
+        "bytes": 1072123,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/subject_aux_inversion.jsonl",
+        "sha256": "2a246a1ac90dd79d68e4c10e3f5ba81fd4a8563e385193a60c658c671aabb865"
+      },
+      {
+        "bytes": 71440,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/turn_taking.jsonl",
+        "sha256": "a350fdbd8669e9f84e2608503ed94af1cfe5bf29ceda9a3e0a2c3efc9665c9db"
+      },
+      {
+        "bytes": 14215247,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/comps_base.jsonl",
+        "sha256": "0e20c242de7321c8ef3745407baaa98008b3fd54b39f050fc49dc103330c8f8b"
+      },
+      {
+        "bytes": 6005157,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/comps_wugs.jsonl",
+        "sha256": "28ad83a6202a69e973901e8875fff104b38b6a6c324c78d37454294225af1168"
+      },
+      {
+        "bytes": 6480433,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/comps_wugs_dist-before.jsonl",
+        "sha256": "0a3adffbeba82581db5562f99fe365adaf199f504eb2a79c71a9481db1e7b8b0"
+      },
+      {
+        "bytes": 6536017,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/comps_wugs_dist-in-between.jsonl",
+        "sha256": "9f82ad76333fd4a23f8c69c313a7eb1da21f1f7e6f8f11361706d7c739ef738c"
+      },
+      {
+        "bytes": 2828199,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/ambiref.jsonl",
+        "sha256": "2167978ef9d1916fc47c2c2260e8dda63ba8658da419addffc4058b144efd6eb"
+      },
+      {
+        "bytes": 2321513,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/move_contents.jsonl",
+        "sha256": "be3bddc321c6d48bcd8b9bc91551318aba06e583431f71136e35bc0469999622"
+      },
+      {
+        "bytes": 2369451,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/regular.jsonl",
+        "sha256": "47382f53407b245cf1fdaa37e19b7eddadb796ebb555fc83ff9ef68bb705969e"
+      },
+      {
+        "bytes": 34719,
+        "identifier": "BabyLM-community/BabyLM-2026-Strict-Evals/ewok_fast.zip",
+        "sha256": "310ffb7d7006533d116a2e58e3b89b05a0812cc27a83153b83e46c3cd10d95ba"
+      },
+      {
+        "bytes": 32761,
+        "identifier": "mrlbenchmarks/global-piqa-parallel/data/parallel_eng_latn.tsv",
+        "sha256": "006bb4548ba6ccb865a95bbaa88c88994d87b3bff4799409e89fef410b18a085"
+      },
+      {
+        "bytes": 26389,
+        "identifier": "mrlbenchmarks/global-piqa-nonparallel/data/nonparallel_eng_latn.tsv",
+        "sha256": "cba1cfc98b1cd0e36bfdfd3b740deefdac8a319b6f4eab47c65aedd8a162418f"
+      }
+    ],
+    "subdomains": [
+      "adjunct_island",
+      "anaphor_gender_agreement",
+      "anaphor_number_agreement",
+      "animate_subject_passive",
+      "animate_subject_trans",
+      "causative",
+      "complex_NP_island",
+      "coordinate_structure_constraint_complex_left_branch",
+      "coordinate_structure_constraint_object_extraction",
+      "determiner_noun_agreement_1",
+      "determiner_noun_agreement_2",
+      "determiner_noun_agreement_irregular_1",
+      "determiner_noun_agreement_irregular_2",
+      "determiner_noun_agreement_with_adj_2",
+      "determiner_noun_agreement_with_adj_irregular_1",
+      "determiner_noun_agreement_with_adj_irregular_2",
+      "determiner_noun_agreement_with_adjective_1",
+      "distractor_agreement_relational_noun",
+      "distractor_agreement_relative_clause",
+      "drop_argument",
+      "ellipsis_n_bar_1",
+      "ellipsis_n_bar_2",
+      "existential_there_object_raising",
+      "existential_there_quantifiers_1",
+      "existential_there_quantifiers_2",
+      "existential_there_subject_raising",
+      "expletive_it_object_raising",
+      "inchoative",
+      "intransitive",
+      "irregular_past_participle_adjectives",
+      "irregular_past_participle_verbs",
+      "irregular_plural_subject_verb_agreement_1",
+      "irregular_plural_subject_verb_agreement_2",
+      "left_branch_island_echo_question",
+      "left_branch_island_simple_question",
+      "matrix_question_npi_licensor_present",
+      "npi_present_1",
+      "npi_present_2",
+      "only_npi_licensor_present",
+      "only_npi_scope",
+      "passive_1",
+      "passive_2",
+      "principle_A_c_command",
+      "principle_A_case_1",
+      "principle_A_case_2",
+      "principle_A_domain_1",
+      "principle_A_domain_2",
+      "principle_A_domain_3",
+      "principle_A_reconstruction",
+      "regular_plural_subject_verb_agreement_1",
+      "regular_plural_subject_verb_agreement_2",
+      "sentential_negation_npi_licensor_present",
+      "sentential_negation_npi_scope",
+      "sentential_subject_island",
+      "superlative_quantifiers_1",
+      "superlative_quantifiers_2",
+      "tough_vs_raising_1",
+      "tough_vs_raising_2",
+      "transitive",
+      "wh_island",
+      "wh_questions_object_gap",
+      "wh_questions_subject_gap",
+      "wh_questions_subject_gap_long_distance",
+      "wh_vs_that_no_gap",
+      "wh_vs_that_no_gap_long_distance",
+      "wh_vs_that_with_gap",
+      "wh_vs_that_with_gap_long_distance",
+      "hypernym",
+      "qa_congruence_easy",
+      "qa_congruence_tricky",
+      "subject_aux_inversion",
+      "turn_taking",
+      "base",
+      "wugs",
+      "wugs_dist_before",
+      "wugs_dist_in_between",
+      "ambiref_0_ops",
+      "ambiref_1_ops",
+      "ambiref_2_ops",
+      "ambiref_3_ops",
+      "ambiref_4_ops",
+      "ambiref_5_ops",
+      "move_contents_0_ops",
+      "move_contents_1_ops",
+      "move_contents_2_ops",
+      "move_contents_3_ops",
+      "move_contents_4_ops",
+      "move_contents_5_ops",
+      "regular_0_ops",
+      "regular_1_ops",
+      "regular_2_ops",
+      "regular_3_ops",
+      "regular_4_ops",
+      "regular_5_ops",
+      "agent-properties",
+      "material-dynamics",
+      "material-properties",
+      "physical-dynamics",
+      "physical-interactions",
+      "physical-relations",
+      "quantitative-properties",
+      "social-interactions",
+      "social-properties",
+      "social-relations",
+      "spatial-relations",
+      "global_piqa_parallel",
+      "global_piqa_nonparallel"
+    ],
+    "tasks": [
+      "blimp",
+      "blimp_supplement",
+      "comps",
+      "entity_tracking",
+      "ewok_fast",
+      "global_piqa_parallel",
+      "global_piqa_nonparallel"
+    ]
+  }
+}

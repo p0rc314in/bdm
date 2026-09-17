@@ -1,0 +1,33 @@
+{
+  "mom": {
+    "author_repository": "https://github.com/OpenSparseLLMs/MoM",
+    "author_commit": "033057c2f80941cb0b70ef62a99dd7ddfc94bf52",
+    "execution_source": "fla 0.5.2 offline payload",
+    "mom_layer_sha256": "3f520c8702c8dfbf71cf63050a0f62a74d19cb13aa0c0eeb12d6cc595787ddd8",
+    "corrected_layer_sha256": "bb484dde65b5aefd9170a30359c3a78a278b0d1b9c68a0cab076aad07e4d36f9",
+    "balancing_source_sha256": "a49d3a88d04f7e0bf06edcf46b2bf3ea5e743cc5f521ce89b04d651b5ed6dcb8",
+    "changes": [
+      "stable within-memory time sort",
+      "retain packed convolution segment boundaries in training",
+      "shared memory uses chunk for short training sequences"
+    ]
+  },
+  "gdn2": {
+    "repository": "https://github.com/NVlabs/GatedDeltaNet-2",
+    "commit": "a5552fe3c67e0ebc7ef1220df68ae8896ec62d56",
+    "path": "dependencies/nvidia-gdn2",
+    "fla_dependency": {
+      "repository": "https://github.com/sustcsonglin/flash-linear-attention",
+      "commit": "4b02d15d6a68700181b180235be62a9fb95d2a38",
+      "reason": "Canonical NVIDIA GDN2 requires use_exp2 and transpose_state_layout before their later FLA API changes; native NVIDIA source unchanged"
+    }
+  },
+  "bdm": {
+    "canonical_commit": "ed51fd03ef83ff8ce50555a66481d878c2fc4a4f"
+  },
+  "sdm": {
+    "upstream": "https://github.com/facebookresearch/sparse-delta-memory",
+    "revision": "183e7df809131b80ad4393741029d0f20fc3640b",
+    "extracted_revision": "bfe51564d1349200d21c8ad6507c248ef7f8ef5e"
+  }
+}
